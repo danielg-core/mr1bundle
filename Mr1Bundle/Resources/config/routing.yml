@@ -1,7 +1,9 @@
-mr1_mr1_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: mr1Mr1Bundle:Page:index }
+root:
+    pattern:  /
+    defaults: { _controller: mr1Mr1Bundle:Page:TimeLine }
     
 timeline:
     pattern:  /timeline
     defaults: { _controller: mr1Mr1Bundle:Page:TimeLine }
+    
+

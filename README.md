@@ -3,7 +3,22 @@ mr1bundle
 - 
 - 
 - clone here symfony_folder\src\mr1
-- 
+
+- register the new bundle in symfony_folder\app\AppKernel.php into "bundles" array : 
+	new mr1\Mr1Bundle\mr1Mr1Bundle()
+
+- include the routing file of the new bundle in symfony_folder\app\config\routing.yml :
+	mr1_mr1:
+		resource: "@mr1Mr1Bundle/Resources/config/routing.yml"
+		prefix:   /
+		
+- include our yml file in symfony_folder\app\config\config.yml :
+	imports:
+		- { resource: @mr1Mr1Bundle/Resources/config/days2.yml }
+		
+- run the run the following command from console in you're "symfony_folder" : 
+	php app/console assets:install web
+	
 - composer.json content: 
 - 
 - {

@@ -1,21 +1,294 @@
-Day_1:
-  task:
-    name: MEETING-Stand up
-    type: type1
-    url: lolhost
-  task:
-    name: MAIL-Daily report
-    type: type2
-    url: localhost
-  task:
-    name: RELEASE -  MEP merged projects
-    type: type3
-    url: lolhost2
-  task:
-    name: MERGE - prev project on release branch
-    type: task3
-    url: lalalla
-  task:
-    name: MAIL - STO/2
-    type: type1
-    url: aaaaaa
+parameters:
+  days:
+    day_1:
+      name: day1
+      tasks:
+          task1:
+            name: MEETING-Stand up
+            type: type1
+            url: lolhost
+
+          task2:
+            name: MAIL-Daily report
+            type: type2
+            url: localhost
+
+          task3:
+            name: RELEASE -  MEP merged projects
+            type: type3
+            url: lolhost2
+
+          task4:
+            name: MERGE - prev project on release branch
+            type: task3
+            url: lalalla
+
+          task5:
+            name: MAIL - STO/2
+            type: type1
+            url: aaaaaa
+        
+        
+        
+    day_2:
+      name: day2
+      tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type3
+            url: urlsss
+
+          task2:
+            name: MAIL - Daily report
+            type: type1
+            url: urllsss
+
+          task3:
+            name: MEETING - OOO PM
+            type: type2
+            url: urlsss
+
+          task4:
+            name: TEST - post merge
+            type: type3
+            url: urlssssss
+
+        
+        
+    day_3:
+      name: day3
+      tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type3
+            url: alalla
+
+          task2:
+            name: MAIL - Daily report
+            type: type2
+            url: alallala
+
+          task3:
+            name: MEETING - Scrum of Scrum
+            type: type1
+            url: alklkl
+
+          task4:
+            name: DOC- test report
+            type: type1
+            url: restttt
+
+          task5:
+            name: DOC - test runs
+            type: type1
+            url: ahjsdhjhdsj
+
+          task6:
+            name: MAIL - test report & runs
+            type: type2
+            url: akjkjk
+
+          task7:
+            name: EXPORT- merged projects in recette
+            type: type3
+            url: lklklklds
+
+
+
+    day_4:
+       name: day4
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type3
+            url: alalla
+
+          task2:
+            name: MAIL - Daily report
+            type: type2
+            url: alallala
+
+          task3:
+            name: DOC- Prepare op com support
+            type: type3
+            url: alklkl
+
+          task4:
+            name: MEETING - Operational committee
+            type: type2
+            url: restsddttt
+
+          task5:
+            name: MAIL - send op com followup
+            type: type3
+            url: ahjsdsshjhdsj
+
+          task6:
+            name: UPDATE - add op com to wiki & sharepoint
+            type: type1
+            url: akjkssjk
+
+          task7:
+            name: MEETING - Testers
+            type: type2
+            url: lbbbbs
+
+          task8:
+            name: MEETING - technical status
+            type: type2
+            url: lkllds
+
+          task9:
+            name: MEETING - SM meeting
+            type: type1
+            url: lklklkddsalds
+
+
+
+    day_5:
+       name: day5
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type1
+            url: alallafff
+
+          task2:
+            name: MAIL - Daily report
+            type: type3
+            url: alalffff
+
+
+
+    day_6:
+       name: day6
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type1
+            url: ala444lla
+
+          task2:
+            name: MAIL - Daily report
+            type: type2
+            url: alal444lala
+
+          task3:
+            name: DOC- test plan
+            type: type1
+            url: alklkl
+
+          task4:
+            name: DOC- test cases
+            type: type3
+            url: restsddttt
+
+          task5:
+            name: MAIL - Test plan & cases
+            type: type3
+            url: restsddttt
+
+
+
+    day_7:
+       name: day7
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type3
+            url: ala444lla
+
+          task2:
+            name: MAIL - Daily report
+            type: type1
+            url: alal
+
+          task3:
+            name: MEETING - OOO PM
+            type: type1
+            url: alklk
+
+
+
+    day_8:
+       name: day8
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type1
+            url: ala444lla
+
+          task2:
+            name: MAIL - Daily report
+            type: type2
+            url: alal
+
+          task3:
+            name: MEETING - OOO Team
+            type: type3
+            url: alklk
+
+    
+    
+    day_9:
+       name: day9
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type2
+            url: ala444la
+
+          task2:
+            name: MAIL - Daily report
+            type: type1
+            url: a444lala
+
+          task3:
+            name: MAIL - demo invitation
+            type: type2
+            url: alklwwwkl
+
+          task4:
+            name: ANALISYS - Next sprint specs
+            type: type3
+            url: rett
+         
+         
+         
+    day_10:
+       name: day10
+       tasks:
+          task1:
+            name: MEETING - Stand up
+            type: type2
+            url: ala444la
+
+          task2:
+            name: MAIL - Daily report
+            type: type1
+            url: a444dfdla
+
+          task3:
+            name: MEETING - Sprint demo
+            type: type3
+            url: alklwwwkl
+
+          task4:
+            name: MEETING - Sprint retrospective
+            type: type1
+            url: rett
+
+          task5:
+            name: MEETING - Sprint planning
+            type: type2
+            url: redfdtt
+
+          task6:
+            name: MAIL - Sprint planning
+            type: type2
+            url: refrrtt
+
+          task7:
+            name: DOC - SLR  to PM / 2
+            type: type3
+            url: retdast
