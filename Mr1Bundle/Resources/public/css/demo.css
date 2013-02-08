@@ -1,0 +1,78 @@
+
+body
+{
+    font-size:        12px;
+    font-family:      "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    color:            #313131;
+}
+
+a
+{
+    color:           #08C;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+strong
+{
+    font-weight: bold;
+}
+
+ul, ol
+{
+    padding-left: 20px;
+}
+
+li
+{
+    padding-bottom: 5px;
+}
+
+ol li
+{
+    list-style-type: decimal;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+
+.symfony-blocks-help
+{
+    overflow: hidden;
+}
+
+.symfony-blocks-help
+{
+    margin-top: 30px;
+    padding:    18px;
+    border:     1px solid #E6E6E6;
+}
+
+.symfony-blocks-help > div
+{
+    width:        300px;
+    height:       300px;
+    float:        left;
+}
+
+.type1
+{
+    color: red;
+}
+
+.type2
+{
+    color: blueviolet;
+}
+
+.type3
+{
+    color: deeppink;
+}

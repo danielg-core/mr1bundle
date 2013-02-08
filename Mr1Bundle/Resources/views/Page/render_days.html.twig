@@ -1,0 +1,17 @@
+<div class="symfony-blocks-help">
+            
+        {% for day in days %}
+            <div class="block-community">
+                <ul>
+                   <li>
+                        <strong>{{day.name}}</strong>
+                   </li>
+                {% for task in day.tasks %}
+                   <li>
+                       <a class="{{ task.type }}" href="{{task.url}}"> Name: {{ task.name }}</a>
+                   </li>
+                {% endfor %} 
+                </ul>
+            </div>
+        {% endfor %}                
+</div>

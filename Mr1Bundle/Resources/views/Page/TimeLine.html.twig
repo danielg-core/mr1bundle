@@ -5,30 +5,8 @@
 {% block title %}Test{% endblock%}
 
 {% block body %}
-   
-        <div class="symfony-blocks-help">
-            
-        {% for day in days %}
-            <div class="block-community">
-                <ul>
-                   <li>
-                        <strong>day {{ loop.index }} </strong>
-                   </li>
-               {% for task in day %}
-                   {#
-                   <li>
-                       <i>task {{ loop.index }} </i>
-                   </li>
-                   #}
-                   <li>
-                       <a class="{{ task.type }}" href="{{task.url}}"> Name: {{ task.name }}</a>
-                   </li>
-                {% endfor %} 
-                </ul>
-            </div>
-        {% endfor %}
-                
-            </div>
+
+    {% include 'mr1Mr1Bundle:Page:render_days.html.twig' with days %}
     
 {% endblock %}
 
