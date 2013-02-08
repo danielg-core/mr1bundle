@@ -1,0 +1,35 @@
+{# empty Twig template #}
+{# extends the layout from view folder's root #}
+{% extends 'mr1Mr1Bundle::layout.html.twig' %}
+
+{% block title %}Test{% endblock%}
+
+{% block body %}
+   
+        <div class="symfony-blocks-help">
+            
+        {% for day in days %}
+            <div class="block-community">
+                <ul>
+                   <li>
+                        <strong>day {{ loop.index }} </strong>
+                   </li>
+               {% for task in day %}
+                   {#
+                   <li>
+                       <i>task {{ loop.index }} </i>
+                   </li>
+                   #}
+                   <li>
+                       <a class="{{ task.type }}" href="{{task.url}}"> Name: {{ task.name }}</a>
+                   </li>
+                {% endfor %} 
+                </ul>
+            </div>
+        {% endfor %}
+                
+            </div>
+    
+{% endblock %}
+
+

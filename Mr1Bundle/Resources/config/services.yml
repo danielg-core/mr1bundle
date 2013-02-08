@@ -1,0 +1,7 @@
+parameters:
+#    mr1_mr1.example.class: mr1\Mr1Bundle\Example
+
+services:
+#    mr1_mr1.example:
+#        class: %mr1_mr1.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

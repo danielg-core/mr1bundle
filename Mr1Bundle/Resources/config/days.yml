@@ -1,0 +1,60 @@
+Day_1:
+  - MEETING-Stand up
+  - MAIL-Daily report
+  - RELEASE -  MEP merged projects
+  - MERGE - prev project on release branch
+  - MAIL - STO/2
+Day_2:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- MEETING - OOO PM
+	- TEST - post merge
+Day_3:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- MEETING - Scrum of Scrum
+	- DOC- test report
+	- DOC - test runs
+	- MAIL - test report & runs
+	- EXPORT- merged projects in recette
+Day_4:
+	- MEETING - Stand up
+	- MAIL  - Daily report
+	- DOC- Prepare op com support
+	- MEETING - Operational committee
+	- MAIL - send op com followup
+	- UPDATE - add op com to wiki & sharepoint
+	- MEETING - Testers
+	- MEETING - technical status
+	- MEETING - SM meeting
+Day_5:
+	- MEETING - Stand up
+	- MAIL - Daily report
+Day_6:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- DOC- test plan
+	- DOC- test cases
+	- MAIL - Test plan & cases
+Day_7:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- MEETING - OOO PM
+Day_8:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- MEETING - OOO Team
+Day_9:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- MAIL - demo invitation
+	- ANALISYS - Next sprint specs
+Day_10:
+	- MEETING - Stand up
+	- MAIL - Daily report
+	- MEETING - Sprint demo
+	- MEETING - Sprint retrospective
+	- MAIL - Sprint retrospective
+	- MEETING - Sprint planning
+	- MAIL - Sprint planning
+	- DOC - SLR  to PM / 2

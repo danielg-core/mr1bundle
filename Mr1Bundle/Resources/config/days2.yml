@@ -1,0 +1,21 @@
+Day_1:
+  task:
+    name: MEETING-Stand up
+    type: type1
+    url: lolhost
+  task:
+    name: MAIL-Daily report
+    type: type2
+    url: localhost
+  task:
+    name: RELEASE -  MEP merged projects
+    type: type3
+    url: lolhost2
+  task:
+    name: MERGE - prev project on release branch
+    type: task3
+    url: lalalla
+  task:
+    name: MAIL - STO/2
+    type: type1
+    url: aaaaaa
