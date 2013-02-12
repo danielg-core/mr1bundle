@@ -2,10 +2,15 @@
 {% extends '::base.html.twig' %}
 
 {% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/mr1Mr1/css/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/mr1Mr1/css/demo.css') }}" />
     {{ parent() }}
 {% endblock %}
 
 {% block sidebar %}
   {#  {% render "mr1Mr1Bundle:Page:sidebar" %} render the sidebar if you have one #}
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('bundles/mr1Mr1/js/jquery.js')}}" ></script>
+    <script type="text/javascript" src="{{ asset('bundles/mr1Mr1/js/legend.js')}}" ></script>
 {% endblock %}

@@ -1,11 +1,30 @@
 parameters:
+  types:
+        type1: 
+          name: type1
+          color: 468847
+          
+        type2:
+          name: type2
+          color: 999999
+         
+        type3:
+          name: type3
+          color: 3A87AD
+         
+        type4:
+          name: type4
+          color: b94a48
+     
+        
+        
   days:
     day_1:
       name: day1
       tasks:
           task1:
             name: MEETING-Stand up
-            type: type1
+            type: type2
             url: lolhost
 
           task2:
@@ -20,7 +39,7 @@ parameters:
 
           task4:
             name: MERGE - prev project on release branch
-            type: task3
+            type: type3
             url: lalalla
 
           task5:
@@ -35,12 +54,12 @@ parameters:
       tasks:
           task1:
             name: MEETING - Stand up
-            type: type3
+            type: type2
             url: urlsss
 
           task2:
             name: MAIL - Daily report
-            type: type1
+            type: type2
             url: urllsss
 
           task3:
@@ -60,7 +79,7 @@ parameters:
       tasks:
           task1:
             name: MEETING - Stand up
-            type: type3
+            type: type2
             url: alalla
 
           task2:
@@ -70,27 +89,27 @@ parameters:
 
           task3:
             name: MEETING - Scrum of Scrum
-            type: type1
+            type: type2
             url: alklkl
 
           task4:
             name: DOC- test report
-            type: type1
+            type: type3
             url: restttt
 
           task5:
             name: DOC - test runs
-            type: type1
+            type: type3
             url: ahjsdhjhdsj
 
           task6:
             name: MAIL - test report & runs
-            type: type2
+            type: type3
             url: akjkjk
 
           task7:
             name: EXPORT- merged projects in recette
-            type: type3
+            type: type1
             url: lklklklds
 
 
@@ -100,7 +119,7 @@ parameters:
        tasks:
           task1:
             name: MEETING - Stand up
-            type: type3
+            type: type2
             url: alalla
 
           task2:
@@ -110,7 +129,7 @@ parameters:
 
           task3:
             name: DOC- Prepare op com support
-            type: type3
+            type: type2
             url: alklkl
 
           task4:
@@ -120,12 +139,12 @@ parameters:
 
           task5:
             name: MAIL - send op com followup
-            type: type3
+            type: type2
             url: ahjsdsshjhdsj
 
           task6:
             name: UPDATE - add op com to wiki & sharepoint
-            type: type1
+            type: type2
             url: akjkssjk
 
           task7:
@@ -140,7 +159,7 @@ parameters:
 
           task9:
             name: MEETING - SM meeting
-            type: type1
+            type: type2
             url: lklklkddsalds
 
 
@@ -150,12 +169,12 @@ parameters:
        tasks:
           task1:
             name: MEETING - Stand up
-            type: type1
+            type: type2
             url: alallafff
 
           task2:
             name: MAIL - Daily report
-            type: type3
+            type: type2
             url: alalffff
 
 
@@ -165,7 +184,7 @@ parameters:
        tasks:
           task1:
             name: MEETING - Stand up
-            type: type1
+            type: type2
             url: ala444lla
 
           task2:
@@ -180,12 +199,12 @@ parameters:
 
           task4:
             name: DOC- test cases
-            type: type3
+            type: type1
             url: restsddttt
 
           task5:
             name: MAIL - Test plan & cases
-            type: type3
+            type: type1
             url: restsddttt
 
 
@@ -195,17 +214,22 @@ parameters:
        tasks:
           task1:
             name: MEETING - Stand up
-            type: type3
+            type: type2
             url: ala444lla
 
           task2:
             name: MAIL - Daily report
-            type: type1
+            type: type2
             url: alal
 
           task3:
             name: MEETING - OOO PM
-            type: type1
+            type: type2
+            url: alklk
+            
+          task4:
+            name: EXPORT - Mantis fixes on recette
+            type: type3
             url: alklk
 
 
@@ -215,7 +239,7 @@ parameters:
        tasks:
           task1:
             name: MEETING - Stand up
-            type: type1
+            type: type2
             url: ala444lla
 
           task2:
@@ -225,7 +249,7 @@ parameters:
 
           task3:
             name: MEETING - OOO Team
-            type: type3
+            type: type2
             url: alklk
 
     
@@ -240,7 +264,7 @@ parameters:
 
           task2:
             name: MAIL - Daily report
-            type: type1
+            type: type2
             url: a444lala
 
           task3:
@@ -250,7 +274,7 @@ parameters:
 
           task4:
             name: ANALISYS - Next sprint specs
-            type: type3
+            type: type2
             url: rett
          
          
@@ -265,17 +289,17 @@ parameters:
 
           task2:
             name: MAIL - Daily report
-            type: type1
+            type: type2
             url: a444dfdla
 
           task3:
             name: MEETING - Sprint demo
-            type: type3
+            type: type2
             url: alklwwwkl
 
           task4:
             name: MEETING - Sprint retrospective
-            type: type1
+            type: type2
             url: rett
 
           task5:
@@ -290,5 +314,5 @@ parameters:
 
           task7:
             name: DOC - SLR  to PM / 2
-            type: type3
+            type: type2
             url: retdast

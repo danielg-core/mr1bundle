@@ -6,7 +6,7 @@
 
 {% block body %}
 
-    {% include 'mr1Mr1Bundle:Page:render_days.html.twig' with days %}
+    {% include 'mr1Mr1Bundle:Page:render_days.html.twig' with {'days': days, 'types':types} %}
     
 {% endblock %}
 

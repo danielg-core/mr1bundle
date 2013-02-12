@@ -13,7 +13,18 @@ class PageController extends Controller
     
     public function TimeLineAction()
     {
+        
         $days = $this->container->getParameter('days');
-        return $this->render('mr1Mr1Bundle:Page:TimeLine.html.twig', array('days' => $days));
+        $types = $this->container->getParameter('types');
+
+     /*   foreach($days as $day)
+        {
+            foreach ($day['tasks'] as $task )
+            {
+                $types[$task['type']]['display']=true;
+            }
+        }
+*/
+        return $this->render('mr1Mr1Bundle:Page:TimeLine.html.twig', array('days' => $days, 'types'=>$types));
     }
 }
