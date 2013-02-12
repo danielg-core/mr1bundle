@@ -1,51 +1,65 @@
 parameters:
-  types:
-        type1: 
-          name: type1
+  assignments:
+        release: 
+          name: RELEASE
           color: 468847
           
-        type2:
-          name: type2
+        sm:
+          name: SM
           color: 999999
          
-        type3:
-          name: type3
+        test:
+          name: TEST
           color: 3A87AD
          
-        type4:
-          name: type4
+        po:
+          name: PO
           color: b94a48
      
-        
+    types:
+        meeting:
+            name: Meeting
+        mail:
+            name: Mail
+        default:
+            name: default
         
   days:
     day_1:
       name: day1
       tasks:
           task1:
-            name: MEETING-Stand up
-            type: type2
-            url: lolhost
+            name: Stand up
+            assign: sm
+            url: http://www.google.com
+            icon: icons/users.png 
+            type: meeting
 
           task2:
-            name: MAIL-Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: localhost
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: RELEASE -  MEP merged projects
-            type: type3
+            name: MEP merged projects
+            assign: release
             url: lolhost2
+            icon: icons/upload2.png
 
           task4:
-            name: MERGE - prev project on release branch
-            type: type3
+            name: Merge prev project on release branch
+            assign: sm
             url: lalalla
+            icon: icons/fullscreen-exit-alt.png
 
           task5:
-            name: MAIL - STO/2
-            type: type1
+            name: STO/2
+            assign: test
             url: aaaaaa
+            icon: icons/envelop.png
+            type : mail
         
         
         
@@ -53,24 +67,31 @@ parameters:
       name: day2
       tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: urlsss
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: urllsss
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: MEETING - OOO PM
-            type: type2
+            name: OOO PM
+            assign: sm
             url: urlsss
+            icon: icons/users.png
+            type: meeting
 
           task4:
-            name: TEST - post merge
-            type: type3
+            name: Post merge testing
+            assign: release
             url: urlssssss
+            icon: icons/search2.png
 
         
         
@@ -78,39 +99,50 @@ parameters:
       name: day3
       tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: alalla
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: alallala
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: MEETING - Scrum of Scrum
-            type: type2
+            name: Scrum of Scrum
+            assign: sm
             url: alklkl
+            icon: icons/users.png
+            type: meeting
 
           task4:
-            name: DOC- test report
-            type: type3
+            name: Test report doc
+            assign: test
             url: restttt
+            icon: icons/paperclip.png
 
           task5:
-            name: DOC - test runs
-            type: type3
+            name: Test runs doc
+            assign: test
             url: ahjsdhjhdsj
+            icon: icons/paperclip.png
 
           task6:
-            name: MAIL - test report & runs
-            type: type3
+            name: Test report & runs
+            assign: test
             url: akjkjk
+            icon: icons/envelop.png
+            type : mail
 
           task7:
-            name: EXPORT- merged projects in recette
-            type: type1
+            name: Export merged projects in recette
+            assign: release
             url: lklklklds
+            icon: icons/upload2.png
 
 
 
@@ -118,49 +150,65 @@ parameters:
        name: day4
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: alalla
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: alallala
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: DOC- Prepare op com support
-            type: type2
+            name: Prepare op com support
+            assign: sm
             url: alklkl
+            icon: icons/paperclip.png
 
           task4:
-            name: MEETING - Operational committee
-            type: type2
+            name: Operational committee
+            assign: sm
             url: restsddttt
+            icon: icons/users.png
+            type: meeting
 
           task5:
-            name: MAIL - send op com followup
-            type: type2
+            name: Send op com followup
+            assign: sm
             url: ahjsdsshjhdsj
+            icon: icons/envelop.png
+            type : mail
 
           task6:
-            name: UPDATE - add op com to wiki & sharepoint
-            type: type2
+            name: Add op com to wiki & sharepoint
+            assign: sm
             url: akjkssjk
+            icon : icons/spinner.png
 
           task7:
-            name: MEETING - Testers
-            type: type2
+            name: Testers meeting
+            assign: test
             url: lbbbbs
+            icon: icons/users.png
+            type: meeting
 
           task8:
-            name: MEETING - technical status
-            type: type2
+            name: Technical status
+            assign: sm
             url: lkllds
+            icon: icons/users.png
+            type: meeting
 
           task9:
-            name: MEETING - SM meeting
-            type: type2
+            name: SM meeting
+            assign: sm
             url: lklklkddsalds
+            icon: icons/users.png
+            type: meeting
 
 
 
@@ -168,14 +216,18 @@ parameters:
        name: day5
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: alallafff
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: alalffff
+            icon: icons/envelop.png
+            type : mail
 
 
 
@@ -183,29 +235,37 @@ parameters:
        name: day6
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: ala444lla
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: alal444lala
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: DOC- test plan
-            type: type1
+            name: test plan doc
+            assign: test
             url: alklkl
+            icon: icons/paperclip.png
 
           task4:
-            name: DOC- test cases
-            type: type1
+            name: Test cases doc
+            assign: test
             url: restsddttt
+            icon: icons/paperclip.png
 
           task5:
-            name: MAIL - Test plan & cases
-            type: type1
+            name: Test plan & cases
+            assign: test
             url: restsddttt
+            icon: icons/envelop.png
+            type : mail
 
 
 
@@ -213,24 +273,31 @@ parameters:
        name: day7
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: ala444lla
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: alal
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: MEETING - OOO PM
-            type: type2
+            name: OOO PM
+            assign: sm
             url: alklk
+            icon: icons/users.png
+            type: meeting
             
           task4:
-            name: EXPORT - Mantis fixes on recette
-            type: type3
+            name: Export Mantis fixes on recette
+            assign: release
             url: alklk
+            icon: icons/upload2.png
 
 
 
@@ -238,44 +305,109 @@ parameters:
        name: day8
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: ala444lla
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: alal
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: MEETING - OOO Team
-            type: type2
+            name: OOO Team
+            assign: sm
             url: alklk
-
+            icon: icons/users.png
+            type: meeting
+            
+          task4:
+            name: Specs - From PO
+            assign: po
+            url: alklk
+            icon: icons/download.png
     
     
     day_9:
        name: day9
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: ala444la
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: a444lala
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: MAIL - demo invitation
-            type: type2
+            name: Demo invitation
+            assign: sm
             url: alklwwwkl
+            icon: icons/envelop.png
+            type : mail
 
           task4:
-            name: ANALISYS - Next sprint specs
-            type: type2
+            name: Analize next sprint specs
+            assign: sm
             url: rett
+            icon: icons/book-alt2.png
+          
+          task5:
+            name: Prepare op com support
+            assign: sm
+            url: alklkl
+            icon: icons/paperclip.png
+
+          task6:
+            name: Operational committee
+            assign: sm
+            url: restsddttt
+            icon: icons/users.png
+            type: meeting
+
+          task7:
+            name: Send op com followup
+            assign: sm
+            url: ahjsdsshjhdsj
+            icon: icons/envelop.png
+            type : mail
+
+          task8:
+            name: Add op com to wiki & sharepoint
+            assign: sm
+            url: akjkssjk
+            icon : icons/spinner.png
+
+          task9:
+            name: Testers meeting
+            assign: test
+            url: lbbbbs
+            icon: icons/users.png
+            type: meeting
+
+          task10:
+            name: Technical status
+            assign: sm
+            url: lkllds
+            icon: icons/users.png
+            type: meeting
+
+          task11:
+            name: SM meeting
+            assign: sm
+            url: lklklkddsalds
+            icon: icons/users.png
+            type: meeting
          
          
          
@@ -283,36 +415,49 @@ parameters:
        name: day10
        tasks:
           task1:
-            name: MEETING - Stand up
-            type: type2
+            name: Stand up
+            assign: sm
             url: ala444la
+            icon: icons/users.png
+            type: meeting
 
           task2:
-            name: MAIL - Daily report
-            type: type2
+            name: Daily report
+            assign: sm
             url: a444dfdla
+            icon: icons/envelop.png
+            type : mail
 
           task3:
-            name: MEETING - Sprint demo
-            type: type2
+            name: Sprint demo
+            assign: sm
             url: alklwwwkl
+            icon: icons/users.png
+            type: meeting
 
           task4:
-            name: MEETING - Sprint retrospective
-            type: type2
+            name: Sprint retrospective
+            assign: sm
             url: rett
+            icon: icons/users.png
+            type: meeting
 
           task5:
-            name: MEETING - Sprint planning
-            type: type2
+            name: Sprint planning
+            assign: sm
             url: redfdtt
+            icon: icons/users.png
+            type: meeting
 
           task6:
-            name: MAIL - Sprint planning
-            type: type2
+            name: Sprint planning
+            assign: sm
             url: refrrtt
+            icon: icons/envelop.png
+            type : mail
 
           task7:
-            name: DOC - SLR  to PM / 2
-            type: type2
+            name: SLR  to PM / 2
+            assign: sm
             url: retdast
+            icon: icons/paperclip.png

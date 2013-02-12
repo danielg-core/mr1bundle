@@ -15,16 +15,16 @@ class PageController extends Controller
     {
         
         $days = $this->container->getParameter('days');
-        $types = $this->container->getParameter('types');
+        $assignments = $this->container->getParameter('assignments');
 
      /*   foreach($days as $day)
         {
             foreach ($day['tasks'] as $task )
             {
-                $types[$task['type']]['display']=true;
+                $assignments[$task['type']]['display']=true;
             }
         }
 */
-        return $this->render('mr1Mr1Bundle:Page:TimeLine.html.twig', array('days' => $days, 'types'=>$types));
+        return $this->render('mr1Mr1Bundle:Page:TimeLine.html.twig', array('days' => $days, 'assignments'=>$assignments));
     }
 }

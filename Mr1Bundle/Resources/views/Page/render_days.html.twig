@@ -4,10 +4,10 @@
             <div class="span2 days">
                 
                 <strong class="day btn ">{{day.name}}</strong>
-                {% for task in day.tasks %}
-                 {% for type in types %}  
-                    {% if type.name == task.type %}
-                        <a class="taskss label {{type.name}}" style="margin-top: 7px; background-color: {{'#'~type.color}}" href="{{task.url}}">{{ task.name }}</a>
+                {% for task in day.tasks %} 
+                 {% for key,assignment in assignments %}   
+                    {% if key == task.assign %}
+                        <a class="taskss label {{assignment.name}}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="{{task.url}}" target="_blank">{% if task.icon is defined %}<img src="{{ asset(['bundles/mr1mr1/img/', task.icon]|join) }}"  width="15px" class="pull-left"/> {% endif %}<div style="margin-left:18px"> {{ task.name }}</div></a>
                     {% endif %}
                  {% endfor %}  
                 {% endfor %} 
@@ -19,12 +19,12 @@
     <div class="legend well">
 	<ul class=" nav nav-list"> 
             <li class="nav-header">Legend</li> 
-           {% for type in types %}
+           {% for assignment in assignments %}
                 
                   <li>
-                        <a id='{{type.name}}' href="#">
-                            <i class="icon-eye-open"></i> {{type.name}} 
-                            <span class="badge" style="background-color: {{'#'~type.color}}">on</span>
+                        <a id='{{assignment.name}}' href="#">
+                            <i class="icon-eye-open"></i> {{assignment.name}} 
+                            <span class="badge pull-right" style="background-color: {{'#'~assignment.color}}">on</span>
                         </a>
                     </li>
                    

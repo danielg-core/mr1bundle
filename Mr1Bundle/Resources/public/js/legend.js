@@ -17,8 +17,9 @@ $(document).ready(function(){
    
    
     $.each($('.legend li a'), function(){
-        $(this).attr('id');
-        if ($('.'+$(this).attr('id')).length == 0)
+        var selector = $(this).attr('id');
+        selector = "."+selector.replace(" ", ".");
+        if ($(selector).length == 0)
         {
             $(this).hide();
         }
@@ -27,6 +28,7 @@ $(document).ready(function(){
    $('.legend li a').bind('click', function(){
        
         var id = $(this).attr('id');
+        id = id.replace(" ", ".");
         showHide(id);
        
    });
