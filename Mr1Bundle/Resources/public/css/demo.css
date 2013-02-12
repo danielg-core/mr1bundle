@@ -1,78 +1,40 @@
-
-body
+.legend
 {
-    font-size:        12px;
-    font-family:      "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-    color:            #313131;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
 }
-
-a
+.days
 {
-    color:           #08C;
-    text-decoration: none;
+    margin-left: 7px;
+    width: 120px;
 }
-
-a:hover
+.day
 {
-    text-decoration: underline;
+    width:92px;
 }
-
-strong
+.taskss
 {
-    font-weight: bold;
+    width:110px;
+    text-align: center;
+    clear: both;
+    white-space: normal;
+   /* overflow-wrap: normal;*/
 }
-
-ul, ol
-{
-    padding-left: 20px;
-}
-
-li
-{
-    padding-bottom: 5px;
-}
-
-ol li
-{
-    list-style-type: decimal;
-}
-
-ul li
-{
-    list-style-type: none;
-}
-
-
-.symfony-blocks-help
-{
-    overflow: hidden;
-}
-
-.symfony-blocks-help
-{
-    margin-top: 30px;
-    padding:    18px;
-    border:     1px solid #E6E6E6;
-}
-
-.symfony-blocks-help > div
-{
-    width:        300px;
-    height:       300px;
-    float:        left;
-}
-
 .type1
 {
-    color: red;
+  /*  margin-top: 7px;
+  /*  background-color: #468847;*/
 }
 
 .type2
 {
-    color: blueviolet;
+  /*  margin-top: 7px;
+  /*  background-color: #999999;*/
 }
 
 .type3
 {
-    color: deeppink;
+   /* margin-top: 7px;
+   /* background-color: #3a87ad;*/
 }
