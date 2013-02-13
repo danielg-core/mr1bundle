@@ -1,6 +1,7 @@
 body
 {
     width:100%;
+    min-width: 1173px;
 }
 .legend
 {
