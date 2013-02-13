@@ -7,7 +7,25 @@
                 {% for task in day.tasks %} 
                  {% for key,assignment in assignments %}   
                     {% if key == task.assign %}
-                        <a class="taskss label {{assignment.name}}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="{{task.url}}" target="_blank">{% if task.icon is defined %}<img src="{{ asset(['bundles/mr1mr1/img/', task.icon]|join) }}"  width="15px" class="pull-left"/> {% endif %}<div style="margin-left:18px"> {{ task.name }}</div></a>
+                        {% for typekey, type in types %}
+                            {% if typekey == task.type %}
+                                {% if task.url is defined %}
+                                    <a class="taskss label {{assignment.name}} {{type.name}} {#{{task.type}}#}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="{{task.url}}" target="_blank">
+                                {% elseif task.info is defined %}
+                                    <a class="taskss label {{assignment.name}} {{type.name}} {#{{task.type}}#}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="#myModal" rel="{{task.info}}" data-toggle="modal">
+                                {% else %}
+                                    <a class="taskss label {{assignment.name}} {{type.name}}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="#" >
+                                {% endif %}
+                                {# display picture of task only if in the day task does not have a parameter "icon" #}
+                                {% if task.icon is defined %}
+                                        <img src="{{ asset(['bundles/mr1mr1/img/', task.icon]|join) }}"  width="15" class="pull-left"/> 
+                                {% elseif type.icon is defined %}
+                                        <img src="{{ asset(['bundles/mr1mr1/img/', type.icon]|join) }}"  width="15" class="pull-left"/> 
+                                {% else %}
+                                {% endif %}
+                                <div style="margin-left:18px"> {{ task.name }}</div></a>
+                            {% endif %}
+                        {% endfor %}
                     {% endif %}
                  {% endfor %}  
                 {% endfor %} 
@@ -17,17 +35,34 @@
 
 
     <div class="legend well">
-	<ul class=" nav nav-list"> 
-            <li class="nav-header">Legend</li> 
+	<ul id="assignment" class=" nav nav-list"> 
+            <li class="nav-header">Assignments</li> 
            {% for assignment in assignments %}
-                
-                  <li>
-                        <a id='{{assignment.name}}' href="#">
-                            <i class="icon-eye-open"></i> {{assignment.name}} 
-                            <span class="badge pull-right" style="background-color: {{'#'~assignment.color}}">on</span>
-                        </a>
-                    </li>
-                   
-            {% endfor %} 
+                <li>
+                   <label  class="checkbox">
+                      <input id='{{assignment.name}}' class="pull-right" type="checkbox"> {{assignment.name}}
+                      <span class="badge pull-right" style="background-color: {{'#'~assignment.color}}">*</span>
+                   </label>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul id="types" class=" nav nav-list"> 
+             <li class="nav-header">types</li> 
+            {% for key, tip in types %}
+             <li>
+                 <label  class="checkbox">
+                    <input id='{{tip.name}}' class="pull-right" type="checkbox"> {{tip.name}}
+                    {% if tip.icon is defined %}
+                        <img src="{{ asset(['bundles/mr1mr1/img/', tip.icon]|join) }}"  width="15" class="pull-right"/> 
+                    {% endif %}
+                  </label>
+             </li>
+             {% endfor %}
+             
 	</ul>
     </div>
+
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  
+</div>
+

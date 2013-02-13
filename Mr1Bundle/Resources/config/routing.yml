@@ -6,4 +6,10 @@ timeline:
     pattern:  /timeline
     defaults: { _controller: mr1Mr1Bundle:Page:TimeLine }
     
+ajax_call:
+    pattern: /ajax
+    defaults: { _controller: mr1Mr1Bundle:Page:Ajax }
+    requirements:
+        _method:  POST
+    
 

@@ -16,13 +16,19 @@ parameters:
           name: PO
           color: b94a48
      
-    types:
+  types:
         meeting:
-            name: Meeting
+            name: meeting
+            icon: icons/users.png
         mail:
-            name: Mail
+            name: mail
+            icon: icons/envelop.png
         default:
             name: default
+            icon: icons/spinner.png
+        document:
+            name: document
+            icon: icons/paperclip.png
         
   days:
     day_1:
@@ -31,35 +37,37 @@ parameters:
           task1:
             name: Stand up
             assign: sm
-            url: http://www.google.com
             icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig
 
           task2:
             name: Daily report
             assign: sm
-            url: localhost
             icon: icons/envelop.png
-            type : mail
+            type: mail
+            info: details.html.twig
 
           task3:
             name: MEP merged projects
             assign: release
             url: lolhost2
             icon: icons/upload2.png
+            type: document
 
           task4:
             name: Merge prev project on release branch
             assign: sm
             url: lalalla
             icon: icons/fullscreen-exit-alt.png
+            type: default
 
           task5:
             name: STO/2
             assign: test
             url: aaaaaa
             icon: icons/envelop.png
-            type : mail
+            type: mail
         
         
         
@@ -78,7 +86,7 @@ parameters:
             assign: sm
             url: urllsss
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: OOO PM
@@ -92,6 +100,7 @@ parameters:
             assign: release
             url: urlssssss
             icon: icons/search2.png
+            type: default
 
         
         
@@ -110,7 +119,7 @@ parameters:
             assign: sm
             url: alallala
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: Scrum of Scrum
@@ -124,25 +133,28 @@ parameters:
             assign: test
             url: restttt
             icon: icons/paperclip.png
+            type: default
 
           task5:
             name: Test runs doc
             assign: test
             url: ahjsdhjhdsj
             icon: icons/paperclip.png
+            type: default
 
           task6:
             name: Test report & runs
             assign: test
             url: akjkjk
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task7:
             name: Export merged projects in recette
             assign: release
             url: lklklklds
             icon: icons/upload2.png
+            type: default
 
 
 
@@ -161,13 +173,14 @@ parameters:
             assign: sm
             url: alallala
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: Prepare op com support
             assign: sm
             url: alklkl
             icon: icons/paperclip.png
+            type: default
 
           task4:
             name: Operational committee
@@ -181,13 +194,14 @@ parameters:
             assign: sm
             url: ahjsdsshjhdsj
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task6:
             name: Add op com to wiki & sharepoint
             assign: sm
             url: akjkssjk
-            icon : icons/spinner.png
+            icon: icons/spinner.png
+            type: default
 
           task7:
             name: Testers meeting
@@ -246,26 +260,28 @@ parameters:
             assign: sm
             url: alal444lala
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: test plan doc
             assign: test
             url: alklkl
             icon: icons/paperclip.png
+            type: default
 
           task4:
             name: Test cases doc
             assign: test
             url: restsddttt
             icon: icons/paperclip.png
+            type: default
 
           task5:
             name: Test plan & cases
             assign: test
             url: restsddttt
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
 
 
@@ -284,7 +300,7 @@ parameters:
             assign: sm
             url: alal
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: OOO PM
@@ -298,6 +314,7 @@ parameters:
             assign: release
             url: alklk
             icon: icons/upload2.png
+            type: default
 
 
 
@@ -316,7 +333,7 @@ parameters:
             assign: sm
             url: alal
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: OOO Team
@@ -330,6 +347,7 @@ parameters:
             assign: po
             url: alklk
             icon: icons/download.png
+            type: default
     
     
     day_9:
@@ -361,12 +379,14 @@ parameters:
             assign: sm
             url: rett
             icon: icons/book-alt2.png
+            type: default
           
           task5:
             name: Prepare op com support
             assign: sm
             url: alklkl
             icon: icons/paperclip.png
+            type: default
 
           task6:
             name: Operational committee
@@ -387,6 +407,7 @@ parameters:
             assign: sm
             url: akjkssjk
             icon : icons/spinner.png
+            type: default
 
           task9:
             name: Testers meeting
@@ -426,7 +447,7 @@ parameters:
             assign: sm
             url: a444dfdla
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task3:
             name: Sprint demo
@@ -454,10 +475,11 @@ parameters:
             assign: sm
             url: refrrtt
             icon: icons/envelop.png
-            type : mail
+            type: mail
 
           task7:
             name: SLR  to PM / 2
             assign: sm
             url: retdast
             icon: icons/paperclip.png
+            type: default

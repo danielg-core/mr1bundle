@@ -3,6 +3,7 @@
 namespace mr1\Mr1Bundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class PageController extends Controller
 {
@@ -16,6 +17,7 @@ class PageController extends Controller
         
         $days = $this->container->getParameter('days');
         $assignments = $this->container->getParameter('assignments');
+        $types = $this->container->getParameter('types');
 
      /*   foreach($days as $day)
         {
@@ -24,7 +26,15 @@ class PageController extends Controller
                 $assignments[$task['type']]['display']=true;
             }
         }
-*/
-        return $this->render('mr1Mr1Bundle:Page:TimeLine.html.twig', array('days' => $days, 'assignments'=>$assignments));
+     */
+        return $this->render('mr1Mr1Bundle:Page:TimeLine.html.twig', 
+                            array('days' => $days, 'assignments'=>$assignments, 'types' => $types));
+    }
+    
+    public function ajaxAction()
+    {
+        $request = $this->getRequest();
+        $file = $request->request->get('file');
+        return $this->render('mr1Mr1Bundle:Page:'.$file);
     }
 }
