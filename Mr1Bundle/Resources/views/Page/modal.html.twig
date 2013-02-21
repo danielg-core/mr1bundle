@@ -1,0 +1,11 @@
+{% include 'mr1Mr1Bundle:Page:'~include %}
+  <div class="modal-footer">
+      {% if image is defined %}
+        {% for name, url in image %}
+              <a class='btn' href="{{ path('get_attachment', {'filename': url}) }}">
+                  <i class="icon-download-alt"></i>
+               {{name}}
+              </a>
+        {% endfor %}
+      {% endif %}
+  </div>

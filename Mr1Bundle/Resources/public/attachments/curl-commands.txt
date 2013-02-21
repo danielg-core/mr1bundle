@@ -1,0 +1,11 @@
+DELETE
+curl -i -H "Accept: application/json" -X DELETE http://localhost/resttt/web/app_dev.php/organisations/1/users/5
+
+GET
+curl -i -H "Accept: application/json" http://localhost/resttt/web/app_dev.php/organisations
+
+POST
+curl -i -H "Accept: application/json" -X POST -d "organisation[name]=nouuu" http://localhost/resttt/web/app_dev.php/organisations
+
+PUT
+curl -i -H "Accept: application/json" -X PUT -d "organisation[name]=pentaloggg" http://localhost/resttt/web/app_dev.php/organisations/4

@@ -11,5 +11,11 @@ ajax_call:
     defaults: { _controller: mr1Mr1Bundle:Page:Ajax }
     requirements:
         _method:  POST
+        
+get_attachment:
+    pattern: /download/{filename}
+    defaults: { _controller: mr1Mr1Bundle:Page:download }
+    requirements:
+         filename: ".+"
     
 

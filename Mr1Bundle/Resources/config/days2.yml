@@ -40,13 +40,26 @@ parameters:
             icon: icons/users.png 
             type: meeting
             info: template/standUp.html.twig
-
+            attachments:
+              file kfnds: rest.jpg
+              file2s: day1/curl-commands.txt
+              fileds kfnds: rest.jpg
+              filesd2: day1/curl-commands.txt
+              fildse kfnds: rest.jpg
+              fildsfge2: day1/curl-commands.txt
+              filgfe kfnds: rest.jpg
+              filgge2: day1/curl-commands.txt
+              
           task2:
             name: Daily report
             assign: sm
             icon: icons/envelop.png
             type: mail
             info: details.html.twig
+            attachments:
+              fa: rest.jpg
+              fsfsfs: curl-commands.txt
+            
 
           task3:
             name: MEP merged projects
