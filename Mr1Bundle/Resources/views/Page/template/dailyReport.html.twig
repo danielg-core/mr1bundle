@@ -1,0 +1,170 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Daily Report</h3>
+  </div>
+  <div class="modal-body">
+    <article>
+        <p>This email will be send to: </p>
+        <ul>
+            <li><strong>To :</strong><a href="mailto:j.szkudlapski@meetic-corp.com">j.szkudlapski@meetic-corp.com</a>, <a href="mailto:ac.alves@meetic-corp.com">ac.alves@meetic-corp.com</a></li>
+            <li><strong>CC: </strong><a href="mailto:e.dupre@meetic-corp.com">e.dupre@meetic-corp.com</a>, <a href="mailto:f.chazot@meetic-corp.com">f.chazot@meetic-corp.com</a>, <a href="mailto:n.kalmanovitz@meetic-corp.com">n.kalmanovitz@meetic-corp.com</a>, <a href="mailto:m.laurent@meetic-corp.com">m.laurent@meetic-corp.com</a>, and to your team members</li>
+        </ul>
+        <p>Daily report email contains 2 parts:</p>
+            <ul>
+                <li>A table with all the team members tasks</li>
+                <li>A print screen with the <a href="http://jira4.ilius.fr:8080/secure/ChartBoard.jspa">Hour Burn Chart</a> for the current sprint.</li>
+            </ul>
+        <p>The table with all team members tasks is composed in 4 columns.<br />
+            The <strong>first column</strong> is for the team members and they are arranged like this: developers, integrators, testers, scrum master. <br />
+            In the <strong>second column</strong> you will write the tasks of your team members from the day before, and in the <strong>3rd column</strong> will be the tasks for the day in course. This tasks can have links to <a href="http://jira4.ilius.fr:8080/"> JIRA </a>or even <a href="http://bugtracker.ilius.fr/">MANTIS</a> issues for more informations about the tasks. <br />
+            On the <strong> last column </strong> you write the issues you have/had with the environment ( server did not work, you do not have some informations about some issue, etc.).
+        </p>
+    </article>
+    <h4>Example:</h4>
+    <p>Hello,<br />
+       Please find today's daily scrum report below:
+    </p>
+        <table class="table table-bordered table-daily-report">
+        <thead>
+           <tr class="table-row-head">
+               <th> Week day - DD/MM/YYYY </th>
+               <th>Yesterday</th>
+               <th>Today</th>
+               <th>Problems/ Comments</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr class="info">
+                <td class="first">
+                   <p><strong>DevName</strong> - Developer</p>
+                   <a href="mailto:email@pentalog.fr">email@pentalog.fr</a> 
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from yesterday</li>
+                        <li>task from yesterday</li>
+                        <li><a href="#"> 0040786: Link to jira or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from today</li>
+                        <li>task from today</li>
+                        <li><a href="#"> 0040786: link to jura or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>Dev Envirement didn't work for 2h</li>
+                    </ul>    
+                </td>
+            </tr>
+            <tr class="info">
+                <td class="first">
+                   <p><strong>DevName</strong> - Developer</p>
+                   <a href="mailto:email@pentalog.fr">email@pentalog.fr</a>  
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from yesterday</li>
+                        <li>task from yesterday</li>
+                        <li><a href="#"> 0040786: Link to jira or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from today</li>
+                        <li>task from today</li>
+                        <li><a href="#"> 0040786: link to jura or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>Dev Envirement didn't work for 2h</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="success">
+                <td class="first">
+                    <p><strong>IntName</strong> - Integrator</p>
+                   <a href="mailto:email@pentalog.fr">email@pentalog.fr</a> 
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from yesterday</li>
+                        <li>task from yesterday</li>
+                        <li><a href="#"> 0040786: Link to jira or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from today</li>
+                        <li>task from today</li>
+                        <li><a href="#"> 0040786: link to jura or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>Dev Envirement didn't work for 2h</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="warning">
+                <td class="first">
+                    <p><strong>TesterName</strong> - Tester</p>
+                   <a href="mailto:email@pentalog.fr">email@pentalog.fr</a> 
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from yesterday</li>
+                        <li>task from yesterday</li>
+                        <li><a href="#"> 0040786: Link to jira or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from today</li>
+                        <li>task from today</li>
+                        <li><a href="#"> 0040786: link to jura or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>Dev Envirement didn't work for 2h</li>
+                    </ul>
+                </td>
+            </tr>
+             <tr class="error">
+                <td class="first">
+                    <p><strong>SMName</strong> - ScrumMaster</p>
+                   <a href="mailto:email@pentalog.fr">email@pentalog.fr</a> 
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from yesterday</li>
+                        <li>task from yesterday</li>
+                        <li><a href="#"> 0040786: Link to jira or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>task from today</li>
+                        <li>task from today</li>
+                        <li><a href="#"> 0040786: link to jura or Mantis</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="unstyle">
+                        <li>Dev Envirement didn't work for 2h</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <br />
+        <p>Together with the updated burndown chart:</p>
+        <img src="{{ asset('bundles/mr1Mr1/img/graphic.png') }}" alt="daily report graphic">
+    </div>
+  </div>

@@ -55,9 +55,9 @@ parameters:
             assign: sm
             icon: icons/envelop.png
             type: mail
-            info: details.html.twig
+            info: template/dailyReport.html.twig
             attachments:
-              fa: rest.jpg
+              email: rest.jpg
               fsfsfs: curl-commands.txt
             
 

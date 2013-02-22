@@ -2,6 +2,7 @@ body
 {
     width:100%;
     min-width: 1173px;
+    background-color: #f0f0f0;
 }
 .legend
 {
@@ -42,3 +43,17 @@ body
    /* margin-top: 7px;
    /* background-color: #3a87ad;*/
 }
+
+.modal { width: auto; margin:0; left:13%;  }
+.modal-body article { width:900px; font-size:12px;  }
+.table-daily-report { font-size:12px; width: 900px; margin: 0 30px; border-color: black; box-shadow: 1px 2px 4px black; }
+.table-daily-report thead tr { background: black; color:white; }
+.table-daily-report thead th { padding:5px; text-align: center; border:1px solid black; vertical-align: middle }
+.table-daily-report td { border:1px solid black; vertical-align: middle; padding:5px;line-height: 16px;  }
+.table-daily-report td li { line-height: 16px; }
+.table-daily-report td.first { width:160px;  }
+.table-daily-report td:last-child { width:140px;  }
+.table-daily-report .info td.first { background-color: #8eb4e3; text-align:center; }
+.table-daily-report .warning td.first { background-color: #f9f29d; text-align:center;  }
+.table-daily-report .error td.first { background-color: #d99694; text-align:center;  }
+.table-daily-report .success td.first { background-color: #a4e193; text-align:center;  }
