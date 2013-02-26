@@ -32,11 +32,31 @@ class PageController extends Controller
                             array('days' => $days, 'assignments'=>$assignments, 'types' => $types));
     }
     
+    public function NewTimeLineAction()
+    {
+        
+        $days = $this->container->getParameter('days2');
+        $assignments = $this->container->getParameter('assignments2');
+        $types = $this->container->getParameter('types2');
+
+        return $this->render('mr1Mr1Bundle:Page:NewTimeLine.html.twig', 
+                            array('days' => $days, 'assignments'=>$assignments, 'types' => $types));
+    }
+    
     public function ajaxAction()
     {
         $request = $this->getRequest();
         $file = $request->request->get('file');
-        $days = $this->container->getParameter('days');
+        $result = substr($file, 0, 5);
+        if($result == 'pavel')
+        {
+            $days = $this->container->getParameter('days2');
+        }
+        else 
+        {
+           $days = $this->container->getParameter('days'); 
+        }
+       
         foreach ($days as $day)
         {
             foreach ($day as $key => $task)
@@ -45,26 +65,36 @@ class PageController extends Controller
                 {
                     foreach ($task as $name => $value)
                     {
-                        //if(isset($value['attachments']) && $value['info']==$file)
-                        if(isset($value['attachments']) && $value['info']==$file)
+                       
+                       
+                        if($value['info']==$file)
                         {
-                           // return $this->render('mr1Mr1Bundle:Page:'.$file, array('image'=>$value['attachments']));
-                        
-                            return $this->render('mr1Mr1Bundle:Page:modal.html.twig', array('image'=>$value['attachments'],
-                                                                                            'include'=>$file));
+                            $params = array('include'=>$file);
+                            if ( isset($value['attachments']) )
+                            {
+                                $params['image'] = $value['attachments'];
+                            }
+                           
+                            return $this->render('mr1Mr1Bundle:Page:modal.html.twig', $params );
                         }
                     }
-                    return $this->render('mr1Mr1Bundle:Page:'.$file);
+                    
+                }
+                elseif ($key=='name') 
+                {
+                    continue;
                 }
             }
+            
         }
     }
 
     public function downloadAction($filename)
     {
-        $path = $this->get('kernel')->getRootDir(). "/../web/bundles/mr1mr1/attachments/";
+        $path = $this->get('kernel')->getRootDir(). '/../web/bundles/mr1mr1/attachments/';
+        
         $content = file_get_contents($path.$filename);
-
+        
         $response = new Response();
 
         //set headers

@@ -1,0 +1,137 @@
+parameters:
+  assignments2:
+        release: 
+          name: RELEASE
+          color: 468847
+          
+        sm:
+          name: SM
+          color: 999999
+         
+        test:
+          name: TEST
+          color: 3A87AD
+         
+        po:
+          name: PO
+          color: b94a48
+     
+  types2:
+        meeting:
+            name: meeting
+            icon: icons/users.png
+        mail:
+            name: mail
+            icon: icons/envelop.png
+        default:
+            name: default
+            icon: icons/spinner.png
+        document:
+            name: document
+            icon: icons/paperclip.png
+        
+  days2:
+    day_1:
+      name: day_1 21.02.2013
+      tasks:
+          task1:
+            name: Stand up - 1h
+            assign: sm
+            icon: icons/users.png 
+            type: meeting
+            info: pavel/standUpUser.html.twig
+            
+          task2:
+            name: Questions about Meetic - 7h
+            assign: sm
+            icon: icons/users.png 
+            type: meeting
+            info: pavel/meetic-questions.html.twig
+                
+                    
+    day_2:
+      name: day_2 22.02.2013
+      tasks:
+          task1:
+            name: Stand up - 1h
+            assign: sm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/standUpUserDay2.html.twig
+
+
+          task2:
+            name: Symfony2 meeting - 2h
+            assign: sm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/symfony2.html.twig
+
+          task3:
+            name: Documents - 5h
+            assign: po
+            icon: icons/download.png
+            type: document
+            info: pavel/documentation.html.twig
+            attachments:
+              animated-browser: Animated-tabs99.pdf
+              specifiications-refonte-signup: Specifications-RefonteSignup-v0.6.pdf
+              photo-uploader: Specs-PhotoUploaderNG-v1.0.pdf
+              photo-size: Specs-Photosizeoptimization-v1.8.pdf
+              profile-page-design: Specs-Profilepagedesignreview-v0.6.pdf
+    
+        
+    day_3:
+      name: day_3 25.02.2013
+      tasks:
+          task1:
+            name: Stand up - 1h
+            assign: sm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/stand-up-git.html.twig
+            
+
+          task2:
+            name: GIT-commands - 5h
+            assign: sm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/git.html.twig
+            attachments:
+              git-commands: GITcommands.docx
+              SSH: Installing-ssh.pdf
+              
+          task3:
+            name: new timeline - 2h
+            assign: sm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/newTime.html.twig
+
+
+    day_4:
+       name: day_4 26.02.2013
+       tasks:
+          task1:
+            name: Stand up - 1h
+            assign: sm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/stand-up-newDoc.html.twig
+
+          task2:
+            name: Work for the new timeline - 3h
+            assign: sm
+            icon: icons/envelop.png
+            type: mail
+            info: pavel/newTime2.html.twig
+
+          task3:
+            name: Read documentation - 4h
+            assign: po
+            url: https://wiki.pentalog.fr
+            icon: icons/paperclip.png
+            type: document
+
+  
