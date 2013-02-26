@@ -1,20 +1,20 @@
 parameters:
   assignments2:
-        release: 
-          name: RELEASE
+        dev: 
+          name: dev_self_training
           color: 468847
           
         sm:
           name: SM
-          color: 999999
+          color: b94a48
          
-        test:
-          name: TEST
+        devsm:
+          name: dev_sm_training
           color: 3A87AD
          
         po:
           name: PO
-          color: b94a48
+          color: 999999
      
   types2:
         meeting:
@@ -35,41 +35,57 @@ parameters:
       name: day_1 21.02.2013
       tasks:
           task1:
-            name: Stand up - 1h
-            assign: sm
+            name: 0.5h - Stand up
+            assign: devsm
             icon: icons/users.png 
             type: meeting
             info: pavel/standUpUser.html.twig
             
           task2:
-            name: Questions about Meetic - 7h
-            assign: sm
+            name: 7.5h - Meetic website discovery
+            assign: dev
             icon: icons/users.png 
             type: meeting
             info: pavel/meetic-questions.html.twig
+            
+          task3:
+            name: Create Meetic access requests
+            assign: sm
+            type: meeting
+            info: pavel/meetic-access-request.html.twig
+            
+          task4:
+            name: Add new team member to email groups
+            assign: sm
+            type: meeting
+            info: pavel/pentalog-email-groups.html.twig
+            
+          task5:
+            name: Add new team member to VPN tunnel
+            assign: sm
+            type: meeting
+            info: pavel/pentalog-vpn-tunnel.html.twig
+            
+          task6:
+            name: Ilius Wiki access request
+            assign: sm
+            type: meeting
+            info: pavel/wiki-ilius.html.twig
                 
                     
     day_2:
       name: day_2 22.02.2013
       tasks:
           task1:
-            name: Stand up - 1h
-            assign: sm
+            name: 0.5h - Stand up
+            assign: devsm
             icon: icons/users.png
             type: meeting
             info: pavel/standUpUserDay2.html.twig
 
-
           task2:
-            name: Symfony2 meeting - 2h
-            assign: sm
-            icon: icons/users.png
-            type: meeting
-            info: pavel/symfony2.html.twig
-
-          task3:
-            name: Documents - 5h
-            assign: po
+            name: 5h - Study TEAM documents
+            assign: dev
             icon: icons/download.png
             type: document
             info: pavel/documentation.html.twig
@@ -79,58 +95,48 @@ parameters:
               photo-uploader: Specs-PhotoUploaderNG-v1.0.pdf
               photo-size: Specs-Photosizeoptimization-v1.8.pdf
               profile-page-design: Specs-Profilepagedesignreview-v0.6.pdf
-    
-        
+              
+          task3:
+            name: 2.5h - Workshop Release process & project specific tools
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/release-process-and-tools.html.twig
+     
     day_3:
       name: day_3 25.02.2013
       tasks:
           task1:
-            name: Stand up - 1h
-            assign: sm
+            name: 0.5h - Stand up
+            assign: devsm
             icon: icons/users.png
             type: meeting
             info: pavel/stand-up-git.html.twig
-            
-
+             
           task2:
-            name: GIT-commands - 5h
-            assign: sm
+            name: 5h - GIT-commands
+            assign: dev
             icon: icons/users.png
             type: meeting
             info: pavel/git.html.twig
             attachments:
               git-commands: GITcommands.docx
               SSH: Installing-ssh.pdf
-              
-          task3:
-            name: new timeline - 2h
-            assign: sm
-            icon: icons/users.png
-            type: meeting
-            info: pavel/newTime.html.twig
-
-
+ 
     day_4:
        name: day_4 26.02.2013
        tasks:
           task1:
-            name: Stand up - 1h
-            assign: sm
+            name: 0.5h - Stand up
+            assign: devsm
             icon: icons/users.png
             type: meeting
             info: pavel/stand-up-newDoc.html.twig
-
+ 
           task2:
-            name: Work for the new timeline - 3h
-            assign: sm
-            icon: icons/envelop.png
-            type: mail
-            info: pavel/newTime2.html.twig
-
-          task3:
-            name: Read documentation - 4h
-            assign: po
-            url: https://wiki.pentalog.fr
+            name: 4h - Study General Project Documentation
+            assign: dev 
+            info: pavel/general-documentation.html.twig
             icon: icons/paperclip.png
             type: document
 
