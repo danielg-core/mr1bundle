@@ -139,5 +139,43 @@ parameters:
             info: pavel/general-documentation.html.twig
             icon: icons/paperclip.png
             type: document
+            attachments:
+              Jira: jira.pdf
+              Mantis Release: Mantis_Release_Process.doc
+              PHP5 best practices: BestPractices_PHP5.pdf
+            
+    day_5:
+       name: day_5 27.02.2013
+       tasks:
+          task1:
+            name: 0.5h - Stand up
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/stand-up-supertracking.html.twig
+ 
+          task2:
+            name: 4h - Study General Project Documentation - SuperTracking
+            assign: dev 
+            info: pavel/supertracking-documentation.html.twig
+            icon: icons/paperclip.png
+            type: document
+            attachments:
+              SuperTracking: En_Supertracking.pdf
+              
+          task3:
+            name: 3.5h - Study Technic Project Documentation 
+            assign: dev 
+            info: pavel/technic-documentation.html.twig
+            icon: icons/paperclip.png
+            type: document
+            attachments:
+              Glosaire: 1_Glosaire.doc
+              Coding Standards: 2_meetic-coding-standards_v2.2.doc
+              Best Practices: 10_best_practices_en.doc
+              CCS RULES ON V6: V6_CSS_cheat_sheet.pdf
+              Comment installer Eclipse: 3_Comment_installer_Eclipse.pdf
+              
+              
 
   
