@@ -45,7 +45,8 @@ body
 }
 
 .modal { width: auto; margin:0; left:13%;  }
-.modal-body article { width:900px; font-size:12px;  }
+.daily-report-body, .prepare_op_comittee { max-height: 600px; }
+.modal-body article { width:830px; font-size:12px; margin:0 10px; }
 .table-daily-report { font-size:12px; width: 900px; margin: 0 30px; border-color: black; box-shadow: 1px 2px 4px black; }
 .table-daily-report thead tr { background: black; color:white; }
 .table-daily-report thead th { padding:5px; text-align: center; border:1px solid black; vertical-align: middle }
@@ -57,3 +58,4 @@ body
 .table-daily-report .warning td.first { background-color: #f9f29d; text-align:center;  }
 .table-daily-report .error td.first { background-color: #d99694; text-align:center;  }
 .table-daily-report .success td.first { background-color: #a4e193; text-align:center;  }
+.prepare_op_comittee img { margin: 10px auto; display:block ;}
