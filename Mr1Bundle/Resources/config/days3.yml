@@ -175,6 +175,32 @@ parameters:
               Best Practices: 10_best_practices_en.doc
               CCS RULES ON V6: V6_CSS_cheat_sheet.pdf
               Comment installer Eclipse: 3_Comment_installer_Eclipse.pdf
+            
+    day_6:
+       name: day_6 28.02.2013
+       tasks:
+          task1:
+            name: 0.5h - Stand up
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/stand-up-technical.html.twig
+ 
+          task2:
+            name: 7.5h - Study Technical Project Documentation 
+            assign: dev 
+            info: pavel/technic-documentation2.html.twig
+            icon: icons/paperclip.png
+            type: document
+            attachments:
+              Informations: 4_informations_utiles.doc
+              Architecture: 5_archi.doc
+              Module de liste: 6a_mlist.pdf
+              Listes Meetic: 6b_mlist.pdf
+              Framework listes: 6c_framework_listes.ods
+              YATS: 7a_YATS.doc
+              
+          
               
               
 
