@@ -1,0 +1,15 @@
+{# empty Twig template #}
+{# extends the layout from view folder's root #}
+{% extends 'mr1Mr1Bundle::layout.html.twig' %}
+
+{% block title %}Test{% endblock%}
+
+{% block body %}
+
+    {% include 'mr1Mr1Bundle:Page:render_days.html.twig' with {'days': days, 
+                                                                'assignments':assignments,
+                                                                'types':types} %}
+    
+{% endblock %}
+
+

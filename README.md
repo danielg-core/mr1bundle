@@ -15,6 +15,7 @@ mr1bundle
 - include our yml file in symfony_folder\app\config\config.yml :
 	imports:
 		- { resource: @mr1Mr1Bundle/Resources/config/days2.yml }
+		- { resource: @mr1Mr1Bundle/Resources/config/days3.yml } // the new route will be "site/newtimeline"
 		
 - run the run the following command from console in you're "symfony_folder" : 
 	php app/console assets:install web

@@ -1,19 +1,19 @@
 parameters:
   assignments:
-        release: 
-          name: RELEASE
+        done: 
+          name: done
           color: 468847
           
-        sm:
-          name: SM
+        claudia:
+          name: claudia
           color: 999999
          
-        test:
-          name: TEST
+        tudor:
+          name: tudor
           color: 3A87AD
          
-        po:
-          name: PO
+        tiby:
+          name: tiby
           color: b94a48
      
   types:
@@ -36,14 +36,16 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             icon: icons/users.png 
             type: meeting
             info: template/standUp.html.twig
+            attachments:
+              file kfnds: rest.jpg 
               
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             icon: icons/envelop.png
             type: mail
             info: template/dailyReport.html.twig
@@ -53,25 +55,24 @@ parameters:
 
           task3:
             name: MEP merged projects
-            assign: release
+            assign: tiby
             info: template/mepMergeProject.html.twig
             icon: icons/upload2.png
             type: document
 
           task4:
             name: Merge prev project on release branch
-            assign: sm
+            assign: tiby
             info: template/mergePrevProject.html.twig
             icon: icons/fullscreen-exit-alt.png
             type: default
 
           task5:
             name: STO/2
-            assign: test
+            assign: tudor
             info: template/sto.html.twig
             icon: icons/envelop.png
             type: mail
-        
         
         
     day_2:
@@ -79,28 +80,28 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
 
           task3:
             name: OOO PM
-            assign: sm
+            assign: tiby
             info: template/oooPM.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Post merge testing
-            assign: release
+            assign: tudor
             info: template/postMergeTesting.html.twig
             icon: icons/search2.png
             type: default
@@ -112,49 +113,49 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor 
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
 
           task3:
             name: Scrum of Scrum
-            assign: sm
+            assign: tiby
             info: template/scrumOfScrum.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Test report doc
-            assign: test
+            assign: claudia
             info: template/testReportDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task5:
             name: Test runs doc
-            assign: test
+            assign: claudia
             info: template/testRunDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task6:
             name: Test report & runs
-            assign: test
+            assign: claudia
             info: template/testReportAndRuns.html.twig
             icon: icons/envelop.png
             type: mail
 
           task7:
             name: Export merged projects in recette
-            assign: release
+            assign: tudor
             info: template/exportProjectInRecette.html.twig
             icon: icons/upload2.png
             type: default
@@ -166,63 +167,63 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
 
           task3:
             name: Prepare op com support
-            assign: sm
+            assign: tiby
             info: template/prepareOpComSupport.html.twig
             icon: icons/paperclip.png
             type: default
 
           task4:
             name: Operational committee
-            assign: sm
+            assign: tudor
             info: template/operationalComittee.html.twig
             icon: icons/users.png
             type: meeting
 
           task5:
             name: Send op com followup
-            assign: sm
+            assign: tiby
             info: template/sendOpComFollowup.html.twig
             icon: icons/envelop.png
             type: mail
 
           task6:
             name: Add op com to wiki & sharepoint
-            assign: sm
+            assign: tiby
             info: template/addOpComWikiSharepoint.html.twig
             icon: icons/spinner.png
             type: default
 
           task7:
             name: Testers meeting
-            assign: test
+            assign: tiby
             info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
 
           task8:
             name: Technical status
-            assign: sm
+            assign: tudor
             info: template/technicalStatus.html.twig
             icon: icons/users.png
             type: meeting
 
           task9:
             name: SM meeting
-            assign: sm
+            assign: tudor
             info: template/smMeeting.html.twig
             icon: icons/users.png
             type: meeting
@@ -234,14 +235,14 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type : mail
@@ -253,35 +254,35 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
 
           task3:
             name: Test plan doc
-            assign: test
+            assign: claudia
             info: template/testPlanDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task4:
             name: Test cases doc
-            assign: test
+            assign: claudia
             info: template/testCasesDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task5:
             name: Test plan & cases
-            assign: test
+            assign: claudia
             info: template/testPlanAndCases.html.twig
             icon: icons/envelop.png
             type: mail
@@ -293,28 +294,28 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
 
           task3:
             name: OOO PM
-            assign: sm
+            assign: tiby
             info: template/oooPM.html.twig
             icon: icons/users.png
             type: meeting
             
           task4:
             name: Export Mantis fixes on recette
-            assign: release
+            assign: tiby
             info: template/exportMantisFixesRecette.html.twig
             icon: icons/upload2.png
             type: default
@@ -326,28 +327,28 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
 
           task3:
             name: OOO Team
-            assign: sm
+            assign: tiby
             info: template/oooTeam.html.twig
             icon: icons/users.png
             type: meeting
             
           task4:
             name: Specs - From PO
-            assign: po
+            assign: tudor
             url: template/specsPO.html.twig
             icon: icons/download.png
             type: default
@@ -358,77 +359,77 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type : mail
 
           task3:
             name: Demo invitation
-            assign: sm
+            assign: tudor
             info: template/demoInvitation.html.twig
             icon: icons/envelop.png
             type : mail
 
           task4:
             name: Analize next sprint specs
-            assign: sm
+            assign: tudor
             info: template/analizeNextSprintSpecs.html.twig
             icon: icons/book-alt2.png
             type: default
           
           task5:
             name: Prepare op com support
-            assign: sm
+            assign: tiby
             info: template/prepareOpComSupport.html.twig
             icon: icons/paperclip.png
             type: default
 
           task6:
             name: Operational committee
-            assign: sm
+            assign: tudor
             info: template/operationalComittee.html.twig
             icon: icons/users.png
             type: meeting
 
           task7:
             name: Send op com followup
-            assign: sm
+            assign: tiby
             info: template/sendOpComFollowup.html.twig
             icon: icons/envelop.png
             type : mail
 
           task8:
             name: Add op com to wiki & sharepoint
-            assign: sm
+            assign: tiby
             info: template/addOpComWikiSharepoint.html.twig
             icon : icons/spinner.png
             type: default
 
           task9:
             name: Testers meeting
-            assign: test
+            assign: claudia
             info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
 
           task10:
             name: Technical status
-            assign: sm
+            assign: tudor
             info: template/technicalStatus.html.twig
             icon: icons/users.png
             type: meeting
 
           task11:
             name: SM meeting
-            assign: sm
+            assign: tudor
             info: template/smMeeting.html.twig
             icon: icons/users.png
             type: meeting
@@ -440,49 +441,49 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
+            assign: tudor
             info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type : mail
 
           task3:
             name: Sprint demo
-            assign: sm
+            assign: tiby
             info: template/sprintDemo.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Sprint retrospective
-            assign: sm
+            assign: tiby
             info: template/sprintRetro.html.twig
             icon: icons/users.png
             type: meeting
 
           task5:
             name: Sprint planning
-            assign: sm
+            assign: tiby
             info: template/sprintPlanning.html.twig
             icon: icons/users.png
             type: meeting
 
           task6:
             name: Sprint planning
-            assign: sm
+            assign: tiby
             info: template/sprintPlanningMail.html.twig
             icon: icons/envelop.png
             type: mail
 
           task7:
             name: SLR  to PM / 2
-            assign: sm
+            assign: tudor
             info: template/srlToPm.html.twig
             icon: icons/paperclip.png
             type: default
