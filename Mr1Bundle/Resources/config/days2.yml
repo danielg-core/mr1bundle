@@ -45,13 +45,12 @@ parameters:
               
           task2:
             name: Daily report
-            assign: tudor
+            assign: done
             icon: icons/envelop.png
             type: mail
             info: template/dailyReport.html.twig
             attachments:
-              email: rest.jpg
-              fsfsfs: curl-commands.txt
+              DOWNLOAD template: timeline/daily_report_email_template.oft
             
 
           task3:
@@ -88,10 +87,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: urllsss
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: OOO PM
@@ -121,9 +122,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor 
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Scrum of Scrum
@@ -174,10 +178,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: alallala
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Prepare op com support
@@ -242,10 +248,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: alalffff
+            assign: done
             icon: icons/envelop.png
-            type : mail
+            type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
 
 
@@ -261,10 +269,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: alal444lala
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: test plan doc
@@ -301,10 +311,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: alal
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: OOO PM
@@ -334,10 +346,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: alal
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: OOO Team
@@ -366,10 +380,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: a444lala
+            assign: done
             icon: icons/envelop.png
-            type : mail
+            type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Demo invitation
@@ -448,10 +464,12 @@ parameters:
 
           task2:
             name: Daily report
-            assign: tudor
-            url: a444dfdla
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Sprint demo
