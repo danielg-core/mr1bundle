@@ -65,10 +65,9 @@ class PageController extends Controller
                 {
                     foreach ($task as $name => $value)
                     {
-                       
-                       
-                        if($value['info']==$file)
+                        if(isset($value['info']) && $value['info']==$file)
                         {
+                            
                             $params = array('include'=>$file);
                             if ( isset($value['attachments']) )
                             {
@@ -77,6 +76,7 @@ class PageController extends Controller
                            
                             return $this->render('mr1Mr1Bundle:Page:modal.html.twig', $params );
                         }
+                       
                     }
                     
                 }
