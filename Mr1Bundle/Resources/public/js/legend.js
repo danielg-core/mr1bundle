@@ -85,14 +85,12 @@ function getParentId()
    return id;
 }
 
-function positionateModal(id)
+function positionateModal()
 {
-  var modal = $('#'+id);
   var windowWidth = $(window).width();
-  var modalWidth = modal.width();
+  var modalWidth = $("#myModal").width();
   var left = (windowWidth - modalWidth)/2;
-  modal.css('left', left);   
-
+  $("#myModal").css('left', left);   
 }
 
 $(document).ready(function(){
@@ -103,6 +101,7 @@ $(document).ready(function(){
        
        if(param == 'modal')
        {
+            $("#myModal").html('');
            var rel = $(this).attr('rel');
            $.ajax({
     		type:"POST",
@@ -111,14 +110,14 @@ $(document).ready(function(){
     		success: function(data)
                 {
                   $("#myModal").html(data);
-                  positionateModal(myModal);
+                  positionateModal();
                 }
            });
        }
     });
     
     $(window).resize(function(){
-      positionateModal(myModal);
+      positionateModal();
     });
    
     // each for checkboxes
