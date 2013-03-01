@@ -36,7 +36,7 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             icon: icons/users.png 
             type: meeting
             info: template/standUp.html.twig
@@ -80,7 +80,7 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -96,7 +96,7 @@ parameters:
 
           task3:
             name: OOO PM
-            assign: tiby
+            assign: tudor
             info: template/oooPM.html.twig
             icon: icons/users.png
             type: meeting
@@ -115,7 +115,7 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -132,7 +132,7 @@ parameters:
 
           task3:
             name: Scrum of Scrum
-            assign: tiby
+            assign: tudor
             info: template/scrumOfScrum.html.twig
             icon: icons/users.png
             type: meeting
@@ -172,7 +172,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -188,7 +188,7 @@ parameters:
 
           task3:
             name: Prepare op com support
-            assign: tiby
+            assign: tudor
             info: template/prepareOpComSupport.html.twig
             icon: icons/paperclip.png
             type: default
@@ -242,7 +242,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -263,7 +263,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -305,7 +305,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -321,7 +321,7 @@ parameters:
 
           task3:
             name: OOO PM
-            assign: tiby
+            assign: tudor
             info: template/oooPM.html.twig
             icon: icons/users.png
             type: meeting
@@ -340,7 +340,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -356,7 +356,7 @@ parameters:
 
           task3:
             name: OOO Team
-            assign: tiby
+            assign: tudor
             info: template/oooTeam.html.twig
             icon: icons/users.png
             type: meeting
@@ -374,7 +374,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -404,7 +404,7 @@ parameters:
           
           task5:
             name: Prepare op com support
-            assign: tiby
+            assign: tudor
             info: template/prepareOpComSupport.html.twig
             icon: icons/paperclip.png
             type: default
@@ -458,7 +458,7 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tiby
+            assign: tudor
             info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
@@ -474,21 +474,21 @@ parameters:
 
           task3:
             name: Sprint demo
-            assign: tiby
+            assign: tudor
             info: template/sprintDemo.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Sprint retrospective
-            assign: tiby
+            assign: tudor
             info: template/sprintRetro.html.twig
             icon: icons/users.png
             type: meeting
 
           task5:
             name: Sprint planning
-            assign: tiby
+            assign: tudor
             info: template/sprintPlanning.html.twig
             icon: icons/users.png
             type: meeting
