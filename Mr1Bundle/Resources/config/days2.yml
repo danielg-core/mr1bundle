@@ -202,21 +202,21 @@ parameters:
 
           task5:
             name: Send op com followup
-            assign: tiby
+            assign: tudor
             info: template/sendOpComFollowup.html.twig
             icon: icons/envelop.png
             type: mail
 
           task6:
             name: Add op com to wiki & sharepoint
-            assign: tiby
+            assign: tudor
             info: template/addOpComWikiSharepoint.html.twig
             icon: icons/spinner.png
             type: default
 
           task7:
             name: Testers meeting
-            assign: tiby
+            assign: claudia
             info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
@@ -364,7 +364,7 @@ parameters:
           task4:
             name: Specs - From PO
             assign: tudor
-            url: template/specsPO.html.twig
+            info: template/specsPO.html.twig
             icon: icons/download.png
             type: default
     
@@ -418,14 +418,14 @@ parameters:
 
           task7:
             name: Send op com followup
-            assign: tiby
+            assign: tudor
             info: template/sendOpComFollowup.html.twig
             icon: icons/envelop.png
             type : mail
 
           task8:
             name: Add op com to wiki & sharepoint
-            assign: tiby
+            assign: tudor
             info: template/addOpComWikiSharepoint.html.twig
             icon : icons/spinner.png
             type: default
