@@ -85,6 +85,15 @@ function getParentId()
    return id;
 }
 
+function positionateModal(id)
+{
+  var modal = $('#'+id);
+  var windowWidth = $(window).width();
+  var modalWidth = modal.width();
+  var left = (windowWidth - modalWidth)/2;
+  modal.css('left', left);   
+
+}
 
 $(document).ready(function(){
     
@@ -101,13 +110,16 @@ $(document).ready(function(){
                 data: {'file':rel},
     		success: function(data)
                 {
-                   $("#myModal").html(data);    
+                  $("#myModal").html(data);
+                  positionateModal(myModal);
                 }
            });
        }
     });
     
-    
+    $(window).resize(function(){
+      positionateModal(myModal);
+    });
    
     // each for checkboxes
     $.each($('.legend li input[type=checkbox]'), function(){
@@ -148,5 +160,5 @@ $(document).ready(function(){
        });
        showtwo(assign,types);
     });
-       
+
 });

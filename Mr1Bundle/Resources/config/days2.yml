@@ -1,19 +1,19 @@
 parameters:
   assignments:
-        release: 
-          name: RELEASE
+        done: 
+          name: done
           color: 468847
           
-        sm:
-          name: SM
+        claudia:
+          name: claudia
           color: 999999
          
-        test:
-          name: TEST
+        tudor:
+          name: tudor
           color: 3A87AD
          
-        po:
-          name: PO
+        tiby:
+          name: tiby
           color: b94a48
      
   types:
@@ -36,52 +36,43 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: sm
+            assign: tiby
             icon: icons/users.png 
             type: meeting
             info: template/standUp.html.twig
             attachments:
-              file kfnds: rest.jpg
-              file2s: day1/curl-commands.txt
-              fileds kfnds: rest.jpg
-              filesd2: day1/curl-commands.txt
-              fildse kfnds: rest.jpg
-              fildsfge2: day1/curl-commands.txt
-              filgfe kfnds: rest.jpg
-              filgge2: day1/curl-commands.txt
+              file kfnds: rest.jpg 
               
           task2:
             name: Daily report
-            assign: sm
+            assign: done
             icon: icons/envelop.png
             type: mail
             info: template/dailyReport.html.twig
             attachments:
-              email: rest.jpg
-              fsfsfs: curl-commands.txt
+              DOWNLOAD template: timeline/daily_report_email_template.oft
             
 
           task3:
             name: MEP merged projects
-            assign: release
-            url: lolhost2
+            assign: tiby
+            info: template/mepMergeProject.html.twig
             icon: icons/upload2.png
             type: document
 
           task4:
             name: Merge prev project on release branch
-            assign: sm
-            url: lalalla
+            assign: tiby
+            info: template/mergePrevProject.html.twig
             icon: icons/fullscreen-exit-alt.png
             type: default
 
           task5:
             name: STO/2
-            assign: test
-            url: aaaaaa
+            assign: tudor
+            info: template/sto.html.twig
             icon: icons/envelop.png
             type: mail
-        
         
         
     day_2:
@@ -89,29 +80,31 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: urlsss
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: urllsss
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: OOO PM
-            assign: sm
-            url: urlsss
+            assign: tiby
+            info: template/oooPM.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Post merge testing
-            assign: release
-            url: urlssssss
+            assign: tudor
+            info: template/postMergeTesting.html.twig
             icon: icons/search2.png
             type: default
 
@@ -122,50 +115,53 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: alalla
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: alallala
+            assign: done
+            info: template/dailyReport.html.twig
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Scrum of Scrum
-            assign: sm
-            url: alklkl
+            assign: tiby
+            info: template/scrumOfScrum.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Test report doc
-            assign: test
-            url: restttt
+            assign: claudia
+            info: template/testReportDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task5:
             name: Test runs doc
-            assign: test
-            url: ahjsdhjhdsj
+            assign: claudia
+            info: template/testRunDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task6:
             name: Test report & runs
-            assign: test
-            url: akjkjk
+            assign: claudia
+            info: template/testReportAndRuns.html.twig
             icon: icons/envelop.png
             type: mail
 
           task7:
             name: Export merged projects in recette
-            assign: release
-            url: lklklklds
+            assign: tudor
+            info: template/exportProjectInRecette.html.twig
             icon: icons/upload2.png
             type: default
 
@@ -176,64 +172,66 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: alalla
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: alallala
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Prepare op com support
-            assign: sm
-            url: alklkl
+            assign: tiby
+            info: template/prepareOpComSupport.html.twig
             icon: icons/paperclip.png
             type: default
 
           task4:
             name: Operational committee
-            assign: sm
-            url: restsddttt
+            assign: tudor
+            info: template/operationalComittee.html.twig
             icon: icons/users.png
             type: meeting
 
           task5:
             name: Send op com followup
-            assign: sm
-            url: ahjsdsshjhdsj
+            assign: tiby
+            info: template/sendOpComFollowup.html.twig
             icon: icons/envelop.png
             type: mail
 
           task6:
             name: Add op com to wiki & sharepoint
-            assign: sm
-            url: akjkssjk
+            assign: tiby
+            info: template/addOpComWikiSharepoint.html.twig
             icon: icons/spinner.png
             type: default
 
           task7:
             name: Testers meeting
-            assign: test
-            url: lbbbbs
+            assign: tiby
+            info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
 
           task8:
             name: Technical status
-            assign: sm
-            url: lkllds
+            assign: tudor
+            info: template/technicalStatus.html.twig
             icon: icons/users.png
             type: meeting
 
           task9:
             name: SM meeting
-            assign: sm
-            url: lklklkddsalds
+            assign: tudor
+            info: template/smMeeting.html.twig
             icon: icons/users.png
             type: meeting
 
@@ -244,17 +242,19 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: alallafff
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: alalffff
+            assign: done
             icon: icons/envelop.png
-            type : mail
+            type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
 
 
@@ -263,36 +263,38 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: ala444lla
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: alal444lala
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
-            name: test plan doc
-            assign: test
-            url: alklkl
+            name: Test plan doc
+            assign: claudia
+            info: template/testPlanDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task4:
             name: Test cases doc
-            assign: test
-            url: restsddttt
+            assign: claudia
+            info: template/testCasesDoc.html.twig
             icon: icons/paperclip.png
             type: default
 
           task5:
             name: Test plan & cases
-            assign: test
-            url: restsddttt
+            assign: claudia
+            info: template/testPlanAndCases.html.twig
             icon: icons/envelop.png
             type: mail
 
@@ -303,29 +305,31 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: ala444lla
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: alal
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: OOO PM
-            assign: sm
-            url: alklk
+            assign: tiby
+            info: template/oooPM.html.twig
             icon: icons/users.png
             type: meeting
             
           task4:
             name: Export Mantis fixes on recette
-            assign: release
-            url: alklk
+            assign: tiby
+            info: template/exportMantisFixesRecette.html.twig
             icon: icons/upload2.png
             type: default
 
@@ -336,29 +340,31 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: ala444lla
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: alal
+            assign: done
             icon: icons/envelop.png
             type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: OOO Team
-            assign: sm
-            url: alklk
+            assign: tiby
+            info: template/oooTeam.html.twig
             icon: icons/users.png
             type: meeting
             
           task4:
             name: Specs - From PO
-            assign: po
-            url: alklk
+            assign: tudor
+            url: template/specsPO.html.twig
             icon: icons/download.png
             type: default
     
@@ -368,78 +374,80 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: ala444la
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: a444lala
+            assign: done
             icon: icons/envelop.png
-            type : mail
+            type: mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Demo invitation
-            assign: sm
-            url: alklwwwkl
+            assign: tudor
+            info: template/demoInvitation.html.twig
             icon: icons/envelop.png
             type : mail
 
           task4:
             name: Analize next sprint specs
-            assign: sm
-            url: rett
+            assign: tudor
+            info: template/analizeNextSprintSpecs.html.twig
             icon: icons/book-alt2.png
             type: default
           
           task5:
             name: Prepare op com support
-            assign: sm
-            url: alklkl
+            assign: tiby
+            info: template/prepareOpComSupport.html.twig
             icon: icons/paperclip.png
             type: default
 
           task6:
             name: Operational committee
-            assign: sm
-            url: restsddttt
+            assign: tudor
+            info: template/operationalComittee.html.twig
             icon: icons/users.png
             type: meeting
 
           task7:
             name: Send op com followup
-            assign: sm
-            url: ahjsdsshjhdsj
+            assign: tiby
+            info: template/sendOpComFollowup.html.twig
             icon: icons/envelop.png
             type : mail
 
           task8:
             name: Add op com to wiki & sharepoint
-            assign: sm
-            url: akjkssjk
+            assign: tiby
+            info: template/addOpComWikiSharepoint.html.twig
             icon : icons/spinner.png
             type: default
 
           task9:
             name: Testers meeting
-            assign: test
-            url: lbbbbs
+            assign: claudia
+            info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
 
           task10:
             name: Technical status
-            assign: sm
-            url: lkllds
+            assign: tudor
+            info: template/technicalStatus.html.twig
             icon: icons/users.png
             type: meeting
 
           task11:
             name: SM meeting
-            assign: sm
-            url: lklklkddsalds
+            assign: tudor
+            info: template/smMeeting.html.twig
             icon: icons/users.png
             type: meeting
          
@@ -450,49 +458,51 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: sm
-            url: ala444la
+            assign: tiby
+            info: template/standUp.html.twig
             icon: icons/users.png
             type: meeting
 
           task2:
             name: Daily report
-            assign: sm
-            url: a444dfdla
+            assign: done
             icon: icons/envelop.png
-            type: mail
+            type : mail
+            info: template/dailyReport.html.twig
+            attachments:
+              DOWNLOAD template: timeline/daily_report_email_template.oft
 
           task3:
             name: Sprint demo
-            assign: sm
-            url: alklwwwkl
+            assign: tiby
+            info: template/sprintDemo.html.twig
             icon: icons/users.png
             type: meeting
 
           task4:
             name: Sprint retrospective
-            assign: sm
-            url: rett
+            assign: tiby
+            info: template/sprintRetro.html.twig
             icon: icons/users.png
             type: meeting
 
           task5:
             name: Sprint planning
-            assign: sm
-            url: redfdtt
+            assign: tiby
+            info: template/sprintPlanning.html.twig
             icon: icons/users.png
             type: meeting
 
           task6:
             name: Sprint planning
-            assign: sm
-            url: refrrtt
+            assign: tiby
+            info: template/sprintPlanningMail.html.twig
             icon: icons/envelop.png
             type: mail
 
           task7:
             name: SLR  to PM / 2
-            assign: sm
-            url: retdast
+            assign: tudor
+            info: template/srlToPm.html.twig
             icon: icons/paperclip.png
             type: default
