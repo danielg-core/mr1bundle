@@ -226,8 +226,66 @@ parameters:
               Git: training/GIT.doc
               A-B testing: training/ABTesting_-_Introduction_US.ppt
               
-          
+    day_8:
+       name: day_8 04.03.2013
+       tasks:
+          task1:
+            name: 0.5h - Stand up
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/stand-up-technical.html.twig
+ 
+          task2:
+            name: 7.5h - Study Technical Project Documentation 
+            assign: dev 
+            info: pavel/technic-documentation4.html.twig
+            icon: icons/paperclip.png
+            type: document
+            attachments:
+              yats: training/Yats_c_extension_documentation.pdf
+              Publio: training/PUBLIO_-_Présentation.ppt
+              SSH: training/Installing_a_SSH_Server_for_GIT_-_Win7.odt
+              SCpublic: training/SCpublic_CrossSelling_Doc_Technique_-_Wiki_Meetic.pdf
+              Photo uploader: training/Technical_-_Photo_Upload_Component_-_v0.4.2.pdf
+              OBO: training/OBO_Regular_-_Refonte_de_l'Admin_-_v1.0.doc          
               
-              
+    day_9:
+       name: day_9 05.03.2013
+       tasks:
+          task1:
+            name: 0.5h - Stand up
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/stand-up-discovery.html.twig
+ 
+          task2:
+            name: 3h - Installation 
+            assign: dev 
+            info: pavel/install.html.twig
+            icon: icons/paperclip.png
+            type: document
+            
+          task3:
+            name: 0.5h - Meeting
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/Meetic-discovery.html.twig
+            
+          task4:
+            name: 2h - Clone master to DEV-NG
+            assign: dev
+            icon: icons/users.png
+            type: document
+            info: pavel/dev.html.twig
+            
+          task5:
+            name: 2h - Sprint-planing
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/sprint-plann.html.twig
 
   
