@@ -55,25 +55,26 @@ parameters:
 
           task3:
             name: MEP merged projects
-            assign: tiby
+            assign: tudor
             info: template/mepMergeProject.html.twig
             icon: icons/upload2.png
             type: document
 
           task4:
             name: Merge prev project on release branch
-            assign: tiby
+            assign: tudor
             info: template/mergePrevProject.html.twig
             icon: icons/fullscreen-exit-alt.png
             type: default
 
           task5:
-            name: STO/2
+            name: Quality Dashboard
             assign: tudor
             info: template/sto.html.twig
             icon: icons/envelop.png
             type: mail
-        
+            attachments:
+              DOWNLOAD template: timeline/MR1_QualityDashboard.xlsx
         
     day_2:
       name: day2
@@ -220,6 +221,7 @@ parameters:
             info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
+            DOWNLOAD template: timeline/PMEE01-02-CRRS-20130201.pdf
 
           task8:
             name: Technical status
@@ -328,7 +330,7 @@ parameters:
             
           task4:
             name: Export Mantis fixes on recette
-            assign: tiby
+            assign: tudor
             info: template/exportMantisFixesRecette.html.twig
             icon: icons/upload2.png
             type: default
@@ -436,6 +438,7 @@ parameters:
             info: template/testersMeeting.html.twig
             icon: icons/users.png
             type: meeting
+            DOWNLOAD template: timeline/PMEE01-02-CRRS-20130201.pdf
 
           task10:
             name: Technical status
@@ -495,7 +498,7 @@ parameters:
 
           task6:
             name: Sprint planning
-            assign: tiby
+            assign: tudor
             info: template/sprintPlanningMail.html.twig
             icon: icons/envelop.png
             type: mail
