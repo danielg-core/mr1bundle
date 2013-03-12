@@ -367,6 +367,24 @@ parameters:
             icon: icons/paperclip.png
             type: document
             
+            
+    day_14:
+       name: day_14 12.03.2013
+       tasks:
+          task1:
+            name: 0.5h - Stand up
+            assign: devsm
+            icon: icons/users.png
+            type: meeting
+            info: pavel/user-story.html.twig
+ 
+          task2:
+            name: 7.5h - refactoring-photos-display 
+            assign: dev 
+            info: pavel/refactoring.html.twig
+            icon: icons/paperclip.png
+            type: document
+            
          
             
          
