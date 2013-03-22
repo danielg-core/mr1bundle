@@ -36,12 +36,10 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: tudor
+            assign: done
             icon: icons/users.png 
             type: meeting
-            info: template/standUp.html.twig
-            attachments:
-              file kfnds: rest.jpg 
+            info: template/standUp.html.twig 
               
           task2:
             name: Daily report
@@ -81,10 +79,10 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -116,10 +114,10 @@ parameters:
       tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -173,10 +171,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -244,10 +242,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -265,10 +263,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -307,10 +305,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -342,10 +340,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -376,10 +374,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
@@ -461,10 +459,10 @@ parameters:
        tasks:
           task1:
             name: Stand up
-            assign: tudor
-            info: template/standUp.html.twig
-            icon: icons/users.png
+            assign: done
+            icon: icons/users.png 
             type: meeting
+            info: template/standUp.html.twig 
 
           task2:
             name: Daily report
