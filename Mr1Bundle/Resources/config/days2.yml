@@ -356,7 +356,7 @@ parameters:
 
           task3:
             name: OOO Team
-            assign: tudor
+            assign: done
             info: template/oooTeam.html.twig
             icon: icons/users.png
             type: meeting
