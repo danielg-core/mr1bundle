@@ -2,19 +2,19 @@ parameters:
   assignments:
         done: 
           name: done
-          color: 468847
+          color: DFF0D8
           
         claudia:
           name: claudia
-          color: 999999
+          color: FCF8E3
          
         tudor:
           name: tudor
-          color: 3A87AD
+          color: D9EDF7
          
         tiby:
           name: tiby
-          color: b94a48
+          color: FCF8E3
      
   types:
         meeting:
@@ -61,7 +61,7 @@ parameters:
             type: document
 
           task4:
-            name: Merge prev project on release branch
+            name: Merge on release branch
             assign: tudor
             info: template/mergePrevProject.html.twig
             icon: icons/fullscreen-exit-alt.png
@@ -160,7 +160,7 @@ parameters:
             type: mail
 
           task7:
-            name: Export merged projects in recette
+            name: Release Branch Merge
             assign: tudor
             info: template/exportProjectInRecette.html.twig
             icon: icons/upload2.png
@@ -209,7 +209,7 @@ parameters:
             type: mail
 
           task6:
-            name: Add op com to wiki & sharepoint
+            name: Upload Op Com CR
             assign: tudor
             info: template/addOpComWikiSharepoint.html.twig
             icon: icons/spinner.png
@@ -329,7 +329,7 @@ parameters:
             type: meeting
             
           task4:
-            name: Export Mantis fixes on recette
+            name: Export Mantis in recette
             assign: tudor
             info: template/exportMantisFixesRecette.html.twig
             icon: icons/upload2.png
@@ -426,7 +426,7 @@ parameters:
             type : mail
 
           task8:
-            name: Add op com to wiki & sharepoint
+            name: Upload Op Com CR
             assign: tudor
             info: template/addOpComWikiSharepoint.html.twig
             icon : icons/spinner.png

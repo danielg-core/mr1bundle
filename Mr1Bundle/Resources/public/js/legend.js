@@ -104,10 +104,10 @@ $(document).ready(function(){
             $("#myModal").html('');
            var rel = $(this).attr('rel');
            $.ajax({
-    		type:"POST",
-    		url:"ajax",
+        type:"POST",
+        url:"ajax",
                 data: {'file':rel},
-    		success: function(data)
+        success: function(data)
                 {
                   $("#myModal").html(data);
                   positionateModal();
@@ -119,7 +119,29 @@ $(document).ready(function(){
     $(window).resize(function(){
       positionateModal();
     });
-   
+    
+    $('#assignment li a, #types li a').tooltip();
+    $('#show_legend').click(function() { 
+      var _self = $(this);
+      var legend = $('#legend');
+
+        if(_self.hasClass('arrow-legend-left'))
+        {
+          legend.animate({
+            left: -legend.width()
+          },500, function(){
+              _self.removeClass('arrow-legend-left');
+          });
+        }
+        else
+        {
+          legend.animate({
+            left: "0"
+          },500, function(){
+              _self.addClass('arrow-legend-left');
+          });
+        }
+    });
     // each for checkboxes
     $.each($('.legend li input[type=checkbox]'), function(){
         var selector = $(this).attr('id');
