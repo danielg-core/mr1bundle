@@ -1,71 +1,74 @@
 
-       <div class="container-fluid">  
-       <div class="row-fluid">
-        <div class="span2 days">
+<div class="timeline">
+ <div class="legend well" id="legend">
+  <div class="show-legend">
+     <div id="show_legend" class="arrow-legend-right"></div>
+  </div>
+  <ul id="assignment" class=" nav nav-list"> 
+            <li class="nav-header">Assignments</li> 
+           {% for assignment in assignments %}
+                <li>
+                   <label  class="checkbox">
+                      <input id='{{assignment.name}}' class="pull-right" type="checkbox">{{assignment.name}}
+                      <a title="" data-placement="right" data-toggle="tooltip" href="#" data-original-title="{{assignment.name}}"><span class="badge pull-right" style="background-color: {{'#'~assignment.color}}">*</span></a>
+                   </label>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul id="types" class=" nav nav-list"> 
+             <li class="nav-header">types</li> 
+            {% for key, tip in types %}
+             <li>
+                 <label  class="checkbox">
+                    <input id='{{tip.name}}' class="pull-right" type="checkbox">{{tip.name}} <a title="" data-placement="right" data-toggle="tooltip" href="#" data-original-title="{{tip.name}}">
+                    {% if tip.icon is defined %}
+                        <img src="{{ asset(['bundles/mr1mr1/img/', tip.icon]|join) }}"  width="15" class="pull-right"/> 
+                    {% endif %}
+                  </a>
+                  </label>
+             </li>
+             {% endfor %}
+             
+  </ul>
+    </div>
+
+
         {% for day in days %}
-                <strong class="day btn ">{{day.name}}</strong>
-        {% endfor %}
-          </div>
-            <div class="span8">
-              {% for day in days %}
+        <div class="day-element">
+                <div class="day"> .:: {{day.name}} ::. </div>
                 {% for task in day.tasks %} 
                  {% for key,assignment in assignments %}   
                     {% if key == task.assign %}
                         {% for typekey, type in types %}
                             {% if typekey == task.type %}
                                 {% if task.url is defined %}
-                                    <a class="taskss {{assignment.name}} {{type.name}} {#{{task.type}}#}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="{{task.url}}" target="_blank">
+                                   <div class="days" ><a class="taskss {{assignment.name}} {{type.name}} {#{{task.type}}#}"  style="background-color: {{'#'~assignment.color}}" href="{{task.url}}" target="_blank">
                                 {% elseif task.info is defined %}
-                                    <a class="taskss  label {{assignment.name}} {{type.name}} {#{{task.type}}#}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="#myModal" rel="{{task.info}}" data-toggle="modal">
+                                    <div class="days"><a class="taskss {{assignment.name}} {{type.name}} {#{{task.type}}#}" style="background-color: {{'#'~assignment.color}}"  href="#myModal" rel="{{task.info}}" data-toggle="modal">
                                 {% else %}
-                                    <a class="taskss  label {{assignment.name}} {{type.name}}" style="margin-top: 7px; background-color: {{'#'~assignment.color}}" href="#" >
+                                    <div class="days"><a class="taskss {{assignment.name}} {{type.name}}" style="background-color: {{'#'~assignment.color}}" href="#" >
                                 {% endif %}
                                 {# display picture of task only if in the day task does not have a parameter "icon" #}
                                 {% if task.icon is defined %}
-                                        <img src="{{ asset(['bundles/mr1mr1/img/', task.icon]|join) }}"  width="15" class="pull-left"/> 
+                                        <img src="{{ asset(['bundles/mr1mr1/img/', task.icon]|join) }}"  class="pull-left timeline-icon"/>
                                 {% elseif type.icon is defined %}
-                                        <img src="{{ asset(['bundles/mr1mr1/img/', type.icon]|join) }}"  width="15" class="pull-left"/> 
+                                        <img src="{{ asset(['bundles/mr1mr1/img/', type.icon]|join) }}"  class="pull-left timeline-icon"/>
                                 {% else %}
                                 {% endif %}
-                                <div style="margin-left:18px"> {{ task.name }}</div></a>
-
+                                <div style="margin-left:23px"> {{ task.name }}</div></a></div>
                             {% endif %}
                         {% endfor %}
                     {% endif %}
                  {% endfor %}  
                 {% endfor %} 
-                <div class="clearfix"></div>
-           {% endfor %} 
-        </div>
-        </div><!-- row-fluid-->
-    </div><!-- container-fluid -->
-    <div class="legend well">
-        <ul id="assignment" class=" nav nav-list"> 
-                <li class="nav-header">Assignments</li> 
-               {% for assignment in assignments %}
-                    <li>
-                       <label  class="checkbox">
-                          <input id='{{assignment.name}}' class="pull-right" type="checkbox"> {{assignment.name}}
-                          <span class="badge pull-right" style="background-color: {{'#'~assignment.color}}">*</span>
-                       </label>
-                    </li>
-                {% endfor %}
-            </ul>
-            <ul id="types" class=" nav nav-list"> 
-                 <li class="nav-header">types</li> 
-                {% for key, tip in types %}
-                 <li>
-                     <label  class="checkbox">
-                        <input id='{{tip.name}}' class="pull-right" type="checkbox"> {{tip.name}}
-                        {% if tip.icon is defined %}
-                            <img src="{{ asset(['bundles/mr1mr1/img/', tip.icon]|join) }}"  width="15" class="pull-right"/> 
-                        {% endif %}
-                      </label>
-                 </li>
-                 {% endfor %}
-                 
-        </ul>
-    </div>
+        </div><!-- day-element -->
+        {% endfor %} 
+      <div class="clearfix"></div>
+</div>
+
+
+
+   
 
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   
